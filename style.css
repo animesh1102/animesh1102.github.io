@@ -178,37 +178,69 @@ nav a:hover {
    PROJECT SECTION
 ========================= */
 
+/* =========================
+   PROJECT SECTION (CAROUSEL STYLE)
+========================= */
+
+.projects-wrapper {
+    margin-top: 40px;
+}
+
 .projects-grid {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     overflow-x: auto;
-    padding-bottom: 10px;
+    padding: 20px 0;
     scroll-snap-type: x mandatory;
 }
 
-/* Hide scrollbar (clean look) */
+/* Hide scrollbar */
 .projects-grid::-webkit-scrollbar {
     display: none;
 }
 
-/* CARDS */
+/* PROJECT CARD */
 .project-card {
-    flex: 0 0 350px;
+    flex: 0 0 420px;
+    min-height: 260px;
+
     background: #1e293b;
     padding: 30px;
     border-radius: 16px;
+
     text-decoration: none;
     color: inherit;
+
     scroll-snap-align: center;
+
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* HOVER FOCUS EFFECT */
-.project-card:hover {
-    transform: scale(1.05);
+/* TEXT */
+.project-card h3 {
+    font-size: 22px;
 }
 
-/* OPTIONAL: make non-hovered slightly dim */
+.project-card p {
+    margin-top: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* TAG */
+.project-tag {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #3b82f6;
+}
+
+/* HOVER EFFECT */
+.project-card:hover {
+    transform: scale(1.08);
+}
+
+/* FADE NON-HOVER */
 .projects-grid:hover .project-card {
     opacity: 0.5;
 }
@@ -217,22 +249,11 @@ nav a:hover {
     opacity: 1;
 }
 
-/* TEXT */
-.project-card h3 {
-    font-size: 20px;
-}
-
-.project-card p {
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-/* TAG */
-.project-tag {
-    display: inline-block;
-    margin-top: 12px;
-    font-size: 13px;
-    color: #3b82f6;
+/* MOBILE FIX */
+@media (max-width: 800px) {
+    .project-card {
+        flex: 0 0 300px;
+    }
 }
 
 /* =========================
