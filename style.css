@@ -184,15 +184,23 @@ nav a:hover {
 
 .projects-wrapper {
     margin-top: 40px;
+
+    /* ✅ ADD THIS HERE */
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.projects-wrapper {
+    margin-top: 40px;
 }
 
 .projects-grid {
     display: flex;
     gap: 40px;
     overflow-x: auto;
-    padding: 20px 0;
-    scroll-snap-type: x mandatory;
+    padding: 20px 60px;  /* ✅ changed */
 }
+
 
 /* Hide scrollbar */
 .projects-grid::-webkit-scrollbar {
