@@ -140,10 +140,11 @@ nav a {
 }
 
 /* CARDS */
-.about-grid {
+..projects-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
+}
 }
 
 .card {
@@ -265,4 +266,24 @@ footer {
     padding: 20px;
     background: #020617;
     font-size: 14px;
+}
+.project-card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.project-tag {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 13px;
+    color: #3b82f6;
 }
