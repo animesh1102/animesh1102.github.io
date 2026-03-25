@@ -42,32 +42,61 @@ nav a {
 }
 
 /* HERO */
+
 .hero {
-    padding: 80px 0;
+    padding: 100px 0;
+    background: radial-gradient(circle at top, #111827, #020617);
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
     align-items: center;
+}
+
+.hero-tag {
+    color: #3b82f6;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .hero h1 {
     font-size: 48px;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.hero p {
+.hero-description {
     color: #94a3b8;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    max-width: 500px;
 }
 
-.hero-image img {
-    width: 100%;
-    border-radius: 12px;
+.hero-buttons {
+    margin-top: 10px;
 }
 
+/* PHOTO */
+
+.hero-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-frame {
+    padding: 4px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6);
+}
+
+.photo-frame img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 14px;
+    display: block;
+}
 /* BUTTONS */
 .btn-primary {
     background: #2563eb;
