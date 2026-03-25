@@ -6,58 +6,125 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-900 text-gray-300 p-8">
+<body class="bg-gray-900 text-gray-300">
 
-<div class="max-w-5xl mx-auto">
+<div class="max-w-5xl mx-auto p-8">
 
+<!-- TITLE -->
 <h1 class="text-4xl font-bold text-white mb-4">
 A320 Wing Structural Analysis
 </h1>
 
 <p class="text-gray-400 mb-8">
-Computational analysis of aerodynamic loading and structural response of a tapered aircraft wing.
+Comprehensive structural analysis of a tapered transport aircraft wing using beam theory and numerical methods.
 </p>
 
-<!-- Results -->
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 text-center">
+<!-- OVERVIEW -->
+<h2 class="text-2xl text-white mb-2">1. Overview</h2>
+<p class="mb-6">
+This project investigates the structural response of a semi-span A320-class wing subjected to aerodynamic loading. 
+The study models lift distribution, computes internal loads, and evaluates bending stress along the span.
+</p>
+
+<!-- GEOMETRY -->
+<h2 class="text-2xl text-white mb-2">2. Wing Geometry</h2>
+<ul class="mb-6 list-disc list-inside">
+<li>Wingspan: 35.8 m</li>
+<li>Semi-span: 17.9 m</li>
+<li>Root chord: 6 m</li>
+<li>Tip chord: 1.5 m</li>
+<li>Taper ratio: 0.25</li>
+</ul>
+
+<!-- METHODOLOGY -->
+<h2 class="text-2xl text-white mb-2">3. Methodology</h2>
+<p class="mb-6">
+An elliptical lift distribution was assumed. Shear force and bending moment were obtained using numerical integration. 
+A simplified spar model was used to estimate bending stress using classical beam theory.
+</p>
+
+<!-- EQUATIONS -->
+<h2 class="text-2xl text-white mb-2">4. Governing Equations</h2>
+<ul class="mb-6 list-disc list-inside">
+<li>Lift distribution: Elliptical</li>
+<li>Shear force: V = ∫ L dy</li>
+<li>Bending moment: M = ∫ V dy</li>
+<li>Stress: σ = M·y / I</li>
+<li>Second moment of area: I = bh³ / 12</li>
+</ul>
+
+<!-- RESULTS -->
+<h2 class="text-2xl text-white mb-4">5. Results</h2>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-8">
     <div class="bg-gray-800 p-4 rounded">
         <p>Max Moment</p>
-        <p class="font-bold text-white">~2.2 MN·m</p>
+        <p class="text-white font-bold">~2.2 MN·m</p>
     </div>
     <div class="bg-gray-800 p-4 rounded">
         <p>Max Stress</p>
-        <p class="font-bold text-white">~88 MPa</p>
+        <p class="text-white font-bold">~88 MPa</p>
     </div>
     <div class="bg-gray-800 p-4 rounded">
         <p>Yield</p>
-        <p class="font-bold text-white">300 MPa</p>
+        <p class="text-white font-bold">300 MPa</p>
     </div>
     <div class="bg-gray-800 p-4 rounded">
         <p>FoS</p>
-        <p class="font-bold text-white">~3.4</p>
+        <p class="text-white font-bold">~3.4</p>
     </div>
 </div>
 
-<!-- Images -->
+<!-- IMAGES -->
 <div class="grid md:grid-cols-2 gap-6 mb-8">
-    <img src="images/stress.png" class="rounded">
-    <img src="images/bending.png" class="rounded">
+    <img src="images/lift.png" class="rounded shadow-lg">
+    <img src="images/shear.png" class="rounded shadow-lg">
+    <img src="images/bending.png" class="rounded shadow-lg">
+    <img src="images/stress.png" class="rounded shadow-lg">
 </div>
 
-<!-- Method -->
-<h2 class="text-2xl text-white mb-2">Methodology</h2>
+<!-- INTERPRETATION -->
+<h2 class="text-2xl text-white mb-2">6. Structural Interpretation</h2>
 <p class="mb-6">
-Elliptical lift distribution was used. Shear force and bending moment were computed using numerical integration.
-A variable spar model was used and stress calculated using beam theory.
+The highest bending stress occurs at the wing root, where bending moment is maximum. 
+Stress reduces toward the tip due to decreasing internal loads and chord length. 
+This validates the use of tapered wings for structural efficiency.
 </p>
 
-<!-- Insight -->
-<h2 class="text-2xl text-white mb-2">Key Insight</h2>
+<!-- LIMITATIONS -->
+<h2 class="text-2xl text-white mb-2">7. Limitations</h2>
+<ul class="mb-6 list-disc list-inside">
+<li>No torsional effects considered</li>
+<li>No material nonlinearities</li>
+<li>Simplified rectangular spar model</li>
+<li>No aeroelastic coupling</li>
+</ul>
+
+<!-- CONCLUSION -->
+<h2 class="text-2xl text-white mb-2">8. Conclusion</h2>
 <p class="mb-6">
-Wing taper improves structural efficiency by reducing stress towards the tip while concentrating material at the root.
+The wing design demonstrates safe structural performance with a factor of safety above 3. 
+The analysis highlights the importance of load distribution and geometry in aircraft wing design.
 </p>
 
-<a href="index.html" class="text-sky-400">← Back</a>
+<!-- CODE -->
+<h2 class="text-2xl text-white mb-2">9. Code (Excerpt)</h2>
+<pre class="bg-gray-800 p-4 rounded text-sm overflow-auto mb-6">
+sigma = (M .* y_max) ./ I;
+max_stress = max(sigma);
+</pre>
+
+<!-- LINKS -->
+<h2 class="text-2xl text-white mb-2">10. Resources</h2>
+<ul class="mb-6 list-disc list-inside">
+<li><a href="results/summary.txt" class="text-sky-400">Download Results</a></li>
+<li><a href="#" class="text-sky-400">View Full Code (GitHub)</a></li>
+</ul>
+
+<!-- BACK -->
+<a href="index.html" class="text-sky-400">
+← Back to Home
+</a>
 
 </div>
 
