@@ -2,129 +2,250 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>A320 Wing Structural Analysis</title>
-<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* PAGE LAYOUT */
+.project-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 20px;
+}
+
+.project-header {
+    margin-bottom: 50px;
+}
+
+.project-header h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.project-meta {
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+/* SECTIONS */
+.project-section {
+    margin-bottom: 50px;
+}
+
+.project-section h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* RESULT GRID */
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.result-box {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.result-box strong {
+    display: block;
+    margin-top: 5px;
+    color: white;
+}
+
+/* IMAGES */
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.project-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* BACK BUTTON */
+.back-link {
+    margin-top: 40px;
+    display: inline-block;
+    color: #3b82f6;
+}
+
+</style>
+
 </head>
 
-<body class="bg-gray-900 text-gray-300">
+<body>
 
-<div class="max-w-5xl mx-auto p-8">
+<div class="project-container">
 
-<!-- TITLE -->
-<h1 class="text-4xl font-bold text-white mb-4">
-A320 Wing Structural Analysis
-</h1>
+<!-- HEADER -->
+<div class="project-header">
+    <h1>A320 Wing Load Distribution Analysis</h1>
 
-<p class="text-gray-400 mb-8">
-Comprehensive structural analysis of a tapered transport aircraft wing using beam theory and numerical methods.
+    <p class="project-meta">
+        Preliminary Design | Structural Analysis | Computational Modelling
+    </p>
+
+    <p>
+        Developed a structural model of a tapered transport aircraft wing to evaluate 
+        how aerodynamic loading translates into internal loads and stress distribution 
+        along the span.
+    </p>
+
+    <p><strong>Tools:</strong> MATLAB | Numerical Integration (trapz) | Beam Theory</p>
+</div>
+
+<!-- PROBLEM -->
+<div class="project-section">
+<h2>Problem</h2>
+
+<p>
+Determine the structural response of a semi-span A320-class wing under aerodynamic loading, 
+including shear force, bending moment, and bending stress distribution, and assess 
+structural safety under simplified flight conditions.
 </p>
+</div>
 
-<!-- OVERVIEW -->
-<h2 class="text-2xl text-white mb-2">1. Overview</h2>
-<p class="mb-6">
-This project investigates the structural response of a semi-span A320-class wing subjected to aerodynamic loading. 
-The study models lift distribution, computes internal loads, and evaluates bending stress along the span.
-</p>
+<!-- APPROACH -->
+<div class="project-section">
+<h2>Approach</h2>
 
-<!-- GEOMETRY -->
-<h2 class="text-2xl text-white mb-2">2. Wing Geometry</h2>
-<ul class="mb-6 list-disc list-inside">
-<li>Wingspan: 35.8 m</li>
-<li>Semi-span: 17.9 m</li>
-<li>Root chord: 6 m</li>
-<li>Tip chord: 1.5 m</li>
-<li>Taper ratio: 0.25</li>
+<ul>
+<li>Applied elliptical lift distribution representing efficient aerodynamic loading</li>
+<li>Discretised wing span into 100 stations</li>
+<li>Computed shear force and bending moment using numerical integration (trapz)</li>
+<li>Modelled spanwise-varying geometry based on chord scaling</li>
+<li>Evaluated second moment of area along span</li>
+<li>Calculated bending stress using Euler–Bernoulli beam theory</li>
 </ul>
-
-<!-- METHODOLOGY -->
-<h2 class="text-2xl text-white mb-2">3. Methodology</h2>
-<p class="mb-6">
-An elliptical lift distribution was assumed. Shear force and bending moment were obtained using numerical integration. 
-A simplified spar model was used to estimate bending stress using classical beam theory.
-</p>
-
-<!-- EQUATIONS -->
-<h2 class="text-2xl text-white mb-2">4. Governing Equations</h2>
-<ul class="mb-6 list-disc list-inside">
-<li>Lift distribution: Elliptical</li>
-<li>Shear force: V = ∫ L dy</li>
-<li>Bending moment: M = ∫ V dy</li>
-<li>Stress: σ = M·y / I</li>
-<li>Second moment of area: I = bh³ / 12</li>
-</ul>
+</div>
 
 <!-- RESULTS -->
-<h2 class="text-2xl text-white mb-4">5. Results</h2>
+<div class="project-section">
+<h2>Results</h2>
 
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-8">
-    <div class="bg-gray-800 p-4 rounded">
-        <p>Max Moment</p>
-        <p class="text-white font-bold">~2.2 MN·m</p>
-    </div>
-    <div class="bg-gray-800 p-4 rounded">
-        <p>Max Stress</p>
-        <p class="text-white font-bold">~88 MPa</p>
-    </div>
-    <div class="bg-gray-800 p-4 rounded">
-        <p>Yield</p>
-        <p class="text-white font-bold">300 MPa</p>
-    </div>
-    <div class="bg-gray-800 p-4 rounded">
-        <p>FoS</p>
-        <p class="text-white font-bold">~3.4</p>
-    </div>
+<div class="result-grid">
+
+<div class="result-box">
+<p>Max Moment</p>
+<strong>~2.2 MN·m</strong>
 </div>
 
-<!-- IMAGES -->
-<div class="grid md:grid-cols-2 gap-6 mb-8">
-    <img src="images/lift.png" class="rounded shadow-lg">
-    <img src="images/shear.png" class="rounded shadow-lg">
-    <img src="images/bending.png" class="rounded shadow-lg">
-    <img src="images/stress.png" class="rounded shadow-lg">
+<div class="result-box">
+<p>Max Stress</p>
+<strong>~88 MPa</strong>
 </div>
 
-<!-- INTERPRETATION -->
-<h2 class="text-2xl text-white mb-2">6. Structural Interpretation</h2>
-<p class="mb-6">
-The highest bending stress occurs at the wing root, where bending moment is maximum. 
-Stress reduces toward the tip due to decreasing internal loads and chord length. 
-This validates the use of tapered wings for structural efficiency.
+<div class="result-box">
+<p>Yield Stress</p>
+<strong>300 MPa</strong>
+</div>
+
+<div class="result-box">
+<p>FoS</p>
+<strong>~3.4</strong>
+</div>
+
+</div>
+
+</div>
+
+<!-- VISUALS -->
+<div class="project-section">
+<h2>Analysis Visualisation</h2>
+
+<div class="project-images">
+<img src="images/lift.png">
+<img src="images/shear.png">
+<img src="images/bending.png">
+<img src="images/stress.png">
+</div>
+
+</div>
+
+<!-- ENGINEERING INSIGHT -->
+<div class="project-section">
+<h2>Engineering Insight</h2>
+
+<p>
+Peak bending stress occurs at the wing root due to maximum bending moment. 
+Stress decreases rapidly towards the tip as internal loads reduce and taper 
+improves structural efficiency. This reflects real aircraft design practice, 
+where material is concentrated near the root to carry primary loads.
 </p>
+
+</div>
+
+<!-- DESIGN DRIVERS -->
+<div class="project-section">
+<h2>Key Design Drivers</h2>
+
+<ul>
+<li>Thickness-to-chord ratio strongly affects stiffness (I ∝ h³)</li>
+<li>Spar width influences stiffness linearly but is less dominant</li>
+<li>Load magnitude directly scales structural stress</li>
+<li>Taper ratio improves load distribution and reduces outboard stress</li>
+</ul>
+
+</div>
+
+<!-- ENGINEERING ASSESSMENT -->
+<div class="project-section">
+<h2>Engineering Assessment</h2>
+
+<p>
+The calculated factor of safety (~3.4) indicates structural adequacy under steady 
+flight loading. However, real aircraft structures must satisfy certification 
+requirements such as CS-25 limit and ultimate loads (e.g. 2.5g manoeuvres).
+</p>
+
+<p>
+Under such conditions, stresses would increase significantly, reducing the margin 
+of safety. This highlights the need for higher-fidelity modelling and realistic 
+load cases in detailed design stages.
+</p>
+
+</div>
 
 <!-- LIMITATIONS -->
-<h2 class="text-2xl text-white mb-2">7. Limitations</h2>
-<ul class="mb-6 list-disc list-inside">
-<li>No torsional effects considered</li>
-<li>No material nonlinearities</li>
-<li>Simplified rectangular spar model</li>
-<li>No aeroelastic coupling</li>
+<div class="project-section">
+<h2>Limitations</h2>
+
+<ul>
+<li>No torsional or aeroelastic effects considered</li>
+<li>Simplified single-spar structural model</li>
+<li>No discrete loads (engine, fuel, structural weight)</li>
+<li>Linear material behaviour assumed</li>
 </ul>
 
-<!-- CONCLUSION -->
-<h2 class="text-2xl text-white mb-2">8. Conclusion</h2>
-<p class="mb-6">
-The wing design demonstrates safe structural performance with a factor of safety above 3. 
-The analysis highlights the importance of load distribution and geometry in aircraft wing design.
-</p>
+</div>
 
-<!-- CODE -->
-<h2 class="text-2xl text-white mb-2">9. Code (Excerpt)</h2>
-<pre class="bg-gray-800 p-4 rounded text-sm overflow-auto mb-6">
-sigma = (M .* y_max) ./ I;
-max_stress = max(sigma);
-</pre>
+<!-- NEXT STEPS -->
+<div class="project-section">
+<h2>Next Steps</h2>
 
-<!-- LINKS -->
-<h2 class="text-2xl text-white mb-2">10. Resources</h2>
-<ul class="mb-6 list-disc list-inside">
-<li><a href="results/summary.txt" class="text-sky-400">Download Results</a></li>
-<li><a href="#" class="text-sky-400">View Full Code (GitHub)</a></li>
+<ul>
+<li>Develop full wing box model (front & rear spars + skin)</li>
+<li>Include torsional stiffness and aeroelastic effects</li>
+<li>Apply certification load cases (CS-25)</li>
+<li>Validate results using finite element analysis (FEA)</li>
 </ul>
+
+</div>
 
 <!-- BACK -->
-<a href="index.html" class="text-sky-400">
-← Back to Home
-</a>
+<a href="index.html" class="back-link">← Back to Portfolio</a>
 
 </div>
 
