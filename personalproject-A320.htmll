@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>A320 Wing Structural Analysis</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-gray-300 p-8">
+
+<div class="max-w-5xl mx-auto">
+
+<h1 class="text-4xl font-bold text-white mb-4">
+A320 Wing Structural Analysis
+</h1>
+
+<p class="text-gray-400 mb-8">
+Computational analysis of aerodynamic loading and structural response of a tapered aircraft wing.
+</p>
+
+<!-- Results -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8 text-center">
+    <div class="bg-gray-800 p-4 rounded">
+        <p>Max Moment</p>
+        <p class="font-bold text-white">~2.2 MN·m</p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded">
+        <p>Max Stress</p>
+        <p class="font-bold text-white">~88 MPa</p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded">
+        <p>Yield</p>
+        <p class="font-bold text-white">300 MPa</p>
+    </div>
+    <div class="bg-gray-800 p-4 rounded">
+        <p>FoS</p>
+        <p class="font-bold text-white">~3.4</p>
+    </div>
+</div>
+
+<!-- Images -->
+<div class="grid md:grid-cols-2 gap-6 mb-8">
+    <img src="images/stress.png" class="rounded">
+    <img src="images/bending.png" class="rounded">
+</div>
+
+<!-- Method -->
+<h2 class="text-2xl text-white mb-2">Methodology</h2>
+<p class="mb-6">
+Elliptical lift distribution was used. Shear force and bending moment were computed using numerical integration.
+A variable spar model was used and stress calculated using beam theory.
+</p>
+
+<!-- Insight -->
+<h2 class="text-2xl text-white mb-2">Key Insight</h2>
+<p class="mb-6">
+Wing taper improves structural efficiency by reducing stress towards the tip while concentrating material at the root.
+</p>
+
+<a href="index.html" class="text-sky-400">← Back</a>
+
+</div>
+
+</body>
+</html>
