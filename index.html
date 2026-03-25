@@ -1,417 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animesh Donikar | Aerospace Vehicle Design Engineer</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font from Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom scrollbar for a cleaner look */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #1e293b;
-        }
-        ::-webkit-scrollbar-thumb {
-            background-color: #475569;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: #64748b;
-        }
-        /* Background image with blur and overlay */
-        .hero-bg {
-            background-image: url('https://placehold.co/1920x1080/1f2937/d1d5db?text=Aircraft+Design+Background');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        .hero-bg::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(17, 24, 39, 0.8);
-            backdrop-filter: blur(8px);
-        }
-        /* Ensures content is above the overlay */
-        .hero-content {
-            position: relative;
-            z-index: 10;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animesh Donikar | Aerospace Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-gray-300 antialiased">
 
-    <!-- Navbar -->
-    <nav class="sticky top-0 z-50 bg-gray-900 bg-opacity-90 backdrop-blur-md transition-shadow duration-300">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-2xl font-bold text-gray-100">AD</a>
-                </div>
-                <div class="flex space-x-4">
-                    <a href="#about" class="text-sm font-medium hover:text-white transition-colors duration-200">About</a>
-                    <a href="#skills" class="text-sm font-medium hover:text-white transition-colors duration-200">Skills</a>
-                    <a href="#projects" class="text-sm font-medium hover:text-white transition-colors duration-200">Projects</a>
-                    <a href="#interactive-qa" class="text-sm font-medium hover:text-white transition-colors duration-200">Ask Animesh</a>
-                    <a href="#contact" class="text-sm font-medium hover:text-white transition-colors duration-200">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+<body>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 max-w-6xl">
-
-        <!-- Hero Section -->
-        <section id="hero" class="hero-bg min-h-[70vh] flex flex-col md:flex-row items-center justify-between rounded-lg shadow-xl">
-
-    <!-- LEFT SIDE (TEXT) -->
-    <div class="hero-content md:w-3/5 p-8 text-center md:text-left">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4">
-            Animesh Donikar
-        </h1>
-
-        <p class="text-xl sm:text-2xl font-semibold text-sky-400 mb-6">
-            Aerospace Vehicle Design Engineer
-        </p>
-
-        <p class="text-gray-300 max-w-xl">
-            MSc Aerospace Vehicle Design graduate with strong focus on aircraft structures, systems engineering, and computational analysis.
-        </p>
-
-        <div class="md:w-2/5 flex justify-center md:justify-end p-6">
-    
-    <div class="p-[3px] rounded-xl bg-gradient-to-br from-sky-400 via-blue-500 to-purple-500 shadow-xl">
-        
-        <img src="images/profile.jpg"
-             alt="Animesh Donikar"
-             class="w-56 h-72 object-cover rounded-xl">
-             
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="container nav-content">
+        <div class="logo">AD</div>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#" class="btn-primary">Download CV</a>
     </div>
+</header>
 
-</div>
-    </div>
-</section>
-    <!-- RIGHT SIDE (PHOTO) -->
-    <div class="md:w-2/5 flex justify-center p-6">
-        <img src="images/profile.jpg"
-             alt="Animesh Donikar"
-             class="w-56 h-56 object-cover rounded-full border-4 border-sky-500 shadow-xl">
-    </div>
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-grid">
 
-        <!-- About Section -->
-        <section id="about" class="py-16 md:py-24 border-t border-gray-700">
-            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">About Me</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div class="md:pr-8">
-                    <p class="text-gray-400 leading-relaxed mb-4">
-                        I am a dedicated Aerospace Engineer with a Master’s in Aerospace Vehicle Design from Cranfield University. My focus is on the intricate details of manufacturing processes and the structural integrity of high-performance components.
-                    </p>
-                    <p class="text-gray-400 leading-relaxed">
-                        My hands-on experience includes collaborating with industry leaders on projects that required a keen eye for manufacturability and an unwavering commitment to quality. I am a quick and enthusiastic learner, committed to developing my skills in methodologies like Six Sigma and other areas of engineering to enhance my contributions.
-                    </p>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-100 mb-4">Education</h3>
-                    <ul class="space-y-4">
-                        <li class="border-b border-gray-700 pb-4">
-                            <p class="font-semibold text-lg text-gray-200">MSc Aerospace Vehicle Design</p>
-                            <p class="text-sm text-gray-400">Cranfield University, England, UK (Sept 2024)</p>
-                            <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
-                                <li>Design for Manufacture and Operation</li>
-                                <li>Design and Analysis of Composite Structures</li>
-                                <li>Aircraft Performance, Aircraft Stability and Control</li>
-                                <li>Aeroelasticity, Finite Element Analysis</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p class="font-semibold text-lg text-gray-200">BTech Aerospace Engineering</p>
-                            <p class="text-sm text-gray-400">SRM University, Chennai, India (May 2022)</p>
-                            <ul class="list-disc list-inside mt-2 text-sm text-gray-400">
-                                <li>Aircraft Material and Production Techniques</li>
-                                <li>Thermodynamics, Aerodynamics, Aircraft Structures</li>
-                                <li>Rocket Propulsion, Fluid Dynamics</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="py-16 md:py-24 border-t border-gray-700">
-            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">Skills</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-100 mb-4">Technical Software</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>CATIA V5, Solidworks, Ansys Fluent, MATLAB, Fusion 360</li>
-                        <li>Adobe Suite (Photoshop, Illustrator, Premier Pro), Blender</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-100 mb-4">Core Competencies</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>Design & Analysis, Research & Development</li>
-                        <li>CAD Modeling, Simulation, Systems Integration</li>
-                        <li>Project Coordination, Technical Documentation</li>
-                    </ul>
-                </div>
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-100 mb-4">Professional Skills</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>Cross-functional Collaboration, Communication, Teamwork</li>
-                        <li>Problem-Solving, Adaptability, Proactive Approach</li>
-                        <li>Leadership, Project Management</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
- <!-- Personal Projects Section -->
-        <section id="featured" class="py-16 border-t border-gray-700">
-    <h2 class="text-3xl font-bold text-white mb-8 text-center">Personal Projects</h2>
-
-    <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
-        <h3 class="text-2xl font-bold text-white mb-2">
-            A320 Wing Structural Analysis
-        </h3>
-
-        <p class="text-sky-400 mb-4">
-            Structural Analysis | Numerical Modelling
-        </p>
-
-        <p class="text-gray-400 mb-6">
-            Developed a computational model to analyse the structural behaviour of a tapered aircraft wing under aerodynamic loading. 
-            Implemented elliptical lift distribution and numerical integration to evaluate shear force, bending moment, and stress distribution.
-        </p>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center mb-6">
-            <div class="bg-gray-700 p-4 rounded">
-                <p class="text-sm text-gray-400">Max Moment</p>
-                <p class="text-white font-bold">~2.2 MN·m</p>
-            </div>
-            <div class="bg-gray-700 p-4 rounded">
-                <p class="text-sm text-gray-400">Max Stress</p>
-                <p class="text-white font-bold">~88 MPa</p>
-            </div>
-            <div class="bg-gray-700 p-4 rounded">
-                <p class="text-sm text-gray-400">Yield</p>
-                <p class="text-white font-bold">300 MPa</p>
-            </div>
-            <div class="bg-gray-700 p-4 rounded">
-                <p class="text-sm text-gray-400">FoS</p>
-                <p class="text-white font-bold">~3.4</p>
-            </div>
-        </div>
-
-        <p class="text-gray-400 mb-6">
-            Key insight: Wing taper significantly improves structural efficiency by reducing stress towards the tip while concentrating material near the root where bending loads are highest.
-        </p>
-<a href="personalproject-A320.html" target="_blank class="text-sky-400 font-semibold hover:text-sky-500">
-    View Full Project →
-</a>
-    </div>
-</section>
-        <!-- Projects Section -->
-        <section id="projects" class="py-16 md:py-24 border-t border-gray-700">
-            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-8 text-center">Featured Projects</h2>
-            <div class="space-y-12">
-                <!-- Project 1: Airbus Fuel Systems Design -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg md:flex items-start md:space-x-8">
-                    <div class="md:w-2/3">
-                        <h3 class="text-2xl font-bold text-white mb-2">Airbus: Fuel Systems Design</h3>
-                        <p class="text-sky-400 font-medium mb-4">Systems Engineering & Airworthiness Compliance</p>
-                        <p class="text-gray-400 leading-relaxed mb-4">
-                            Engineered the fuel tank venting, inerting, and water management systems for an A320-sized commercial aircraft, progressing the design to a Conceptual Design Review (CDR) level in collaboration with Airbus. The project involved optimizing pipe sizing, integrating an OBIGGS for inerting, and developing a water management system to comply with EASA CS-25 safety regulations.
-                        </p>
-                        <p class="text-gray-400 leading-relaxed mb-4">
-                            Provided technical coordination within the team, developed CAD models, and presented design outcomes to Airbus stakeholders, receiving positive feedback on system innovation and feasibility.
-                        </p>
-                        <a href="#" class="text-sm font-semibold text-sky-400 hover:text-sky-500 transition-colors duration-200">
-                            View Details &rarr;
-                        </a>
-                    </div>
-                    <div class="mt-6 md:mt-0 md:w-1/3">
-                        <div class="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg">
-                            <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Fuel+System+Project" alt="Airbus fuel system project image" class="object-cover w-full h-full">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Airbus Electric Taxiing System Design -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg md:flex items-start md:space-x-8 flex-row-reverse">
-                    <div class="md:w-2/3">
-                        <h3 class="text-2xl font-bold text-white mb-2">Airbus: Electric Taxiing System Design</h3>
-                        <p class="text-sky-400 font-medium mb-4">Mechanical Design & Performance Analysis</p>
-                        <p class="text-gray-400 leading-relaxed mb-4">
-                            Collaborated with Airbus to develop an electronic taxiing system for A320-sized passenger aircraft. This involved designing and integrating an electric motor system into the main landing gear and optimizing torque transfer through a two-stage planetary gear system.
-                        </p>
-                        <p class="text-gray-400 leading-relaxed mb-4">
-                            Conducted detailed analysis of power requirements and system weight, with the final design projecting a significant reduction in operational costs and emissions, contributing to Airbus' sustainability goals.
-                        </p>
-                        <a href="#" class="text-sm font-semibold text-sky-400 hover:text-sky-500 transition-colors duration-200">
-                            View Details &rarr;
-                        </a>
-                    </div>
-                    <div class="mt-6 md:mt-0 md:w-1/3">
-                        <div class="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg">
-                            <img src="https://placehold.co/600x400/1f2937/d1d5db?text=E-Taxi+System+Project" alt="Electric taxiing system project image" class="object-cover w-full h-full">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3: Solar Thermal Propulsion System -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-lg md:flex items-start md:space-x-8">
-                    <div class="md:w-2/3">
-                        <h3 class="text-2xl font-bold text-white mb-2">Solar Thermal Propulsion System</h3>
-                        <p class="text-sky-400 font-medium mb-4">Research & Simulation</p>
-                        <p class="text-gray-400 leading-relaxed mb-4">
-                            Led a collaborative team to conceptualize and evaluate a Solar Thermal Propulsion System for small satellites. Executed precise modeling using **Solidworks** and intricate simulations with **Ansys Fluent** to perform a comparative analysis of thrust values.
-                        </p>
-                        <p class="text-gray-400 leading-relaxed mb-4">
-                            The research highlighted Hydrogen as a safer and more effective propellant, demonstrating problem-solving skills and the ability to present complex technical findings to expert audiences.
-                        </p>
-                        <a href="#" class="text-sm font-semibold text-sky-400 hover:text-sky-500 transition-colors duration-200">
-                            View Details &rarr;
-                        </a>
-                    </div>
-                    <div class="mt-6 md:mt-0 md:w-1/3">
-                        <div class="aspect-w-16 aspect-h-9 overflow-hidden rounded-lg">
-                            <img src="https://placehold.co/600x400/1f2937/d1d5db?text=Propulsion+System+Project" alt="Solar thermal propulsion system project image" class="object-cover w-full h-full">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        
-
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 md:py-24 border-t border-gray-700 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4 text-center">Get In Touch</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto mb-8 text-center">
-                If you'd like to discuss my experience or a potential opportunity, please feel free to reach out.
+        <div>
+            <h1>Showcasing aerospace engineering excellence</h1>
+            <p>
+                MSc Aerospace Vehicle Design graduate specialising in aircraft structures,
+                systems engineering, and computational analysis.
             </p>
-            <div class="space-y-4 text-center">
-                <p class="text-lg font-medium text-gray-200">
-                    <a href="mailto:animesh.donikar@gmail.com" class="hover:text-white transition-colors duration-200">animesh.donikar@gmail.com</a>
-                </p>
-                <p class="text-lg font-medium text-gray-200">
-                    <a href="https://linkedin.com/in/animesh-donikar-369411192" target="_blank" class="hover:text-white transition-colors duration-200">linkedin.com/in/animesh-donikar-369411192</a>
-                </p>
-                <p class="text-lg font-medium text-gray-200">
-                    +44 (0) 7514441740
-                </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-secondary">Contact Me</a>
             </div>
-        </section>
+        </div>
 
-    </main>
+        <div class="hero-image">
+            <img src="images/aircraft.jpg" alt="Aircraft">
+        </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-8 text-center text-sm text-gray-500 border-t border-gray-800">
-        <p>&copy; 2025 Animesh Donikar. All Rights Reserved.</p>
-    </footer>
+    </div>
+</section>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const qaButton = document.getElementById('qa-button');
-            const qaInput = document.getElementById('qa-input');
-            const qaResponse = document.getElementById('qa-response');
-            const qaLoading = document.getElementById('qa-loading');
+<!-- ABOUT -->
+<section id="about" class="section light">
+    <div class="container">
+        <h2>Engineering expertise, clearly demonstrated</h2>
 
-            // Hardcode your CV details here for the LLM to use as context
-            const cvContent = `
-                Animesh Donikar's Personal Statement: A dedicated Aerospace Engineer with a strong passion for aviation and the manufacturing sector, supported by a Master's in Aerospace Vehicle Design, specializing in Aircraft Design. Possesses expertise in research and development, CAD modeling, simulation software and project coordination, eager to contribute to advancements in global aviation.
+        <p class="section-subtext">
+            Aerospace engineering graduate with experience in structural analysis,
+            systems design, and computational modelling. Focused on delivering
+            industry-relevant engineering solutions.
+        </p>
 
-                Education: MSc Aerospace Vehicle Design, Cranfield University, UK (Sept 2024). BTech Aerospace Engineering, SRM University, India (May 2022).
+        <div class="about-grid">
 
-                Skills: CATIA V5, Solidworks, Ansys Fluent, MATLAB, Fusion 360, Adobe Suite, Blender. Core competencies include Design & Analysis, Research & Development, CAD Modeling, Simulation, Systems Integration, Project Coordination, and Technical Documentation.
+            <div class="card">
+                <h3>Structures & Analysis</h3>
+                <p>Wing load modelling, stress analysis, FEM fundamentals.</p>
+            </div>
 
-                Projects:
-                1. Airbus: Fuel Systems Design (Sept 2023 - May 2024): Engineered fuel tank venting, inerting, and water management systems for an A320-sized aircraft. Focused on EASA CS-25 compliance, optimizing pipe sizing, integrating an OBIGGS for inerting, and developing water management. Coordinated with team members and presented to stakeholders.
-                2. Airbus: Electric Taxiing System Design (May 2024 - Aug 2024): Collaborated with Airbus to develop an electronic taxiing system for A320-sized aircraft. Designed and integrated an electric motor system into the main landing gear. Conducted analysis of power requirements, system weight, and safety. Focused on enhancing energy efficiency and reducing fuel consumption and emissions.
-                3. Solar Thermal Propulsion System (Jan 2022 - May 2022): Led a team to conceptualize and evaluate a Solar Thermal Propulsion System for small satellites. Used Solidworks and Ansys Fluent for modeling and simulation. Performed a comparative analysis of propellants, finding Hydrogen to be safer and more effective.
-            `;
-            
-            const promptTemplate = (question) => {
-                return `You are a helpful assistant acting as Animesh Donikar, an Aerospace Engineer. Your role is to answer questions about Animesh's professional background and projects.
-                
-                Here is the information you must use to answer:
-                ${cvContent}
-                
-                Based on the provided information, please answer the following question as Animesh:
-                "${question}"
-                
-                If the question is unrelated to the provided information, politely state that you can only answer questions about Animesh's professional background and resume. Do not invent new information. Keep your answers concise and professional.`;
-            };
+            <div class="card">
+                <h3>Systems Engineering</h3>
+                <p>Fuel systems, integration, certification constraints.</p>
+            </div>
 
-            const callGeminiAPI = async (userQuestion) => {
-                qaButton.disabled = true;
-                qaLoading.classList.remove('hidden');
-                qaResponse.textContent = '';
+            <div class="card">
+                <h3>Computational Tools</h3>
+                <p>MATLAB, numerical methods, simulation workflows.</p>
+            </div>
 
-                try {
-                    const apiKey = "";
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+        </div>
+    </div>
+</section>
 
-                    const chatHistory = [];
-                    chatHistory.push({ role: "user", parts: [{ text: promptTemplate(userQuestion) }] });
-                    const payload = { contents: chatHistory };
+<!-- PROJECTS -->
+<section id="projects" class="section dark">
+    <div class="container">
+        <h2>Technical Work. Industry-Level Detail.</h2>
 
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
+        <div class="projects-grid">
 
-                    const result = await response.json();
+            <div class="project-card large">
+                <img src="images/project1.jpg">
+                <h3>A320 Wing Load Distribution</h3>
+                <p>Elliptical lift modelling, bending moment analysis, stress evaluation.</p>
+            </div>
 
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        qaResponse.textContent = text;
-                    } else {
-                        qaResponse.textContent = 'Sorry, I could not generate a response at this time. Please try again.';
-                    }
+            <div class="project-card">
+                <h3>Fuel System Architecture</h3>
+                <p>ATA 28 design, venting & inerting system.</p>
+            </div>
 
-                } catch (error) {
-                    console.error('Error calling Gemini API:', error);
-                    qaResponse.textContent = 'An error occurred. Please check the console for details.';
-                } finally {
-                    qaButton.disabled = false;
-                    qaLoading.classList.add('hidden');
-                }
-            };
+            <div class="project-card">
+                <h3>Electric Taxiing System</h3>
+                <p>Power transmission, landing gear integration.</p>
+            </div>
 
-            qaButton.addEventListener('click', () => {
-                const userQuestion = qaInput.value.trim();
-                if (userQuestion) {
-                    callGeminiAPI(userQuestion);
-                }
-            });
-            
-            qaInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') {
-                    const userQuestion = qaInput.value.trim();
-                    if (userQuestion) {
-                        callGeminiAPI(userQuestion);
-                    }
-                }
-            });
-        });
-    </script>
+            <div class="project-card">
+                <h3>MATLAB Computational Work</h3>
+                <p>Numerical integration and validation modelling.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section light">
+    <div class="container contact">
+
+        <h2>Contact</h2>
+        <p>For opportunities, collaborations, or engineering discussions.</p>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> animesh.donikar@gmail.com</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/animesh-donikar-369411192</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Animesh Donikar</p>
+</footer>
+
 </body>
 </html>
