@@ -140,11 +140,21 @@ nav a {
 }
 
 /* CARDS */
-..projects-grid {
+.projects-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
 }
+}
+}
+.project-card {
+    padding: 30px;
+    min-height: 180px;
+}
+@media (max-width: 800px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {
