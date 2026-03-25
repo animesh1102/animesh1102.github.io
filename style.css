@@ -303,3 +303,37 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================
+   EXPERTISE SECTION
+========================= */
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.expertise-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expertise-card h3 {
+    margin-bottom: 10px;
+}
+
+.expertise-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+}
