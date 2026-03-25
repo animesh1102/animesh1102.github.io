@@ -179,21 +179,45 @@ nav a:hover {
 ========================= */
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 30px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
 }
 
+/* Hide scrollbar (clean look) */
+.projects-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARDS */
 .project-card {
+    flex: 0 0 350px;
     background: #1e293b;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 16px;
     text-decoration: none;
     color: inherit;
-    min-height: 180px;
-    transition: all 0.25s ease;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* HOVER FOCUS EFFECT */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* OPTIONAL: make non-hovered slightly dim */
+.projects-grid:hover .project-card {
+    opacity: 0.5;
+}
+
+.projects-grid:hover .project-card:hover {
+    opacity: 1;
+}
+
+/* TEXT */
 .project-card h3 {
     font-size: 20px;
 }
@@ -203,16 +227,12 @@ nav a:hover {
     line-height: 1.5;
 }
 
+/* TAG */
 .project-tag {
     display: inline-block;
     margin-top: 12px;
     font-size: 13px;
     color: #3b82f6;
-}
-
-.project-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
 /* =========================
