@@ -78,7 +78,7 @@ nav a:hover {
     padding: 100px 0;
 
     background:
-        linear-gradient(rgba(11,15,25,0.85), rgba(11,15,25,0.95)),
+        linear-gradient(rgba(11,15,25,0.85), rgba(11,15,25,0.3)),
         url("images/hero2.jpg");
 
     background-size: 110%;
