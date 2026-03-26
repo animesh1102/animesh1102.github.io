@@ -2,126 +2,108 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Electric Taxiing System (Airbus)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electric Taxiing System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-gray-900 text-gray-300">
+<body>
 
-<div class="container">
+<div class="project-container">
 
-<!-- TITLE -->
-<h1 class="project-title">Electric Taxiing System (A320 Class)</h1>
+<!-- HERO -->
+<div class="project-images">
+<img src="images/etaxi-hero.png">
+</div>
 
-<p class="project-subtitle">
-Airbus-Supported Project | Aircraft Systems Integration
+<!-- HEADER -->
+<div class="project-header">
+<h1>Electric Taxiing System (Airbus Project)</h1>
+
+<p class="project-meta">
+Mechanical Design | Integration | Performance Analysis
 </p>
 
-<p class="project-note">
-Due to project confidentiality, detailed schematics and proprietary data are not included.
-This page focuses on engineering methodology and system-level design decisions.
-</p>
-
-<!-- OVERVIEW -->
-<h2>1. Overview</h2>
 <p>
-This project involved the design and integration of an electric taxiing system to enable aircraft ground movement without main engine usage. The objective was to reduce fuel consumption, emissions, and operational costs during taxi operations.
+Developed an electric taxiing system integrated into landing gear to reduce fuel consumption and emissions during ground operations.
 </p>
 
-<!-- SYSTEM -->
-<h2>2. System Concept</h2>
-<ul>
-<li>Electric motors integrated into main landing gear</li>
-<li>Power supplied via aircraft APU</li>
-<li>Independent wheel drive for manoeuvrability</li>
-<li>Gear reduction system for torque amplification</li>
-</ul>
+<p><strong>Note:</strong> Detailed design confidential. High-level approach shown.</p>
+</div>
 
-<!-- CONTRIBUTION -->
-<h2>3. Engineering Work</h2>
+<!-- PROBLEM -->
+<div class="project-section">
+<h2>Problem</h2>
+<p>
+Design an onboard electric propulsion system capable of taxiing an aircraft independently of main engines.
+</p>
+</div>
+
+<!-- APPROACH -->
+<div class="project-section">
+<h2>Approach</h2>
+<ul>
+<li>Integrated electric motor into main landing gear</li>
+<li>Designed torque transmission using gearbox system</li>
+<li>Evaluated power requirements and efficiency</li>
+<li>Assessed system weight and impact on aircraft performance</li>
+</ul>
+</div>
+
+<!-- ENGINEERING WORK -->
+<div class="project-section">
+<h2>Engineering Work</h2>
 
 <div class="grid-2">
 
 <div class="card-dark">
-<h3>Motor Sizing</h3>
-<p>
-Calculated required torque (~12,500 Nm per wheel) based on rolling resistance,
-taxi acceleration, and incline conditions.
-</p>
-</div>
-
-<div class="card-dark">
 <h3>Motor Selection</h3>
-<p>
-Selected EMRAX 348 axial flux motor due to high power density and low mass,
-delivering ~400 kW peak output.
-</p>
+<p>Torque and power sizing based on aircraft weight</p>
 </div>
 
 <div class="card-dark">
-<h3>Gearbox Design</h3>
-<p>
-Designed two-stage planetary gearbox (~16:1 ratio) to convert high motor RPM
-into required wheel torque.
-</p>
+<h3>Transmission</h3>
+<p>Gearbox design for torque transfer</p>
 </div>
 
 <div class="card-dark">
 <h3>Integration</h3>
-<p>
-Integrated motor and gearbox within landing gear while maintaining structural
-and geometric constraints of the aircraft.
-</p>
+<p>Landing gear constraints and structural considerations</p>
+</div>
+
+<div class="card-dark">
+<h3>Performance</h3>
+<p>Fuel savings and operational efficiency analysis</p>
 </div>
 
 </div>
 
-<!-- PERFORMANCE -->
-<h2>4. Performance</h2>
-
-<ul>
-<li>Total power requirement: ~237 kW</li>
-<li>Motor mass: ~41 kg</li>
-<li>System mass: ~90 kg per wheel</li>
-<li>Fuel penalty: ~0.1% per mission</li>
-</ul>
-
-<!-- ENGINEERING -->
-<h2>5. Engineering Considerations</h2>
-<ul>
-<li>Thermal management of motor and gearbox</li>
-<li>Structural load transfer through landing gear</li>
-<li>Power availability from APU</li>
-<li>Redundancy and safety under failure conditions</li>
-</ul>
-
-<!-- TRADE OFFS -->
-<h2>6. Trade-Offs</h2>
-<ul>
-<li>Weight vs fuel savings</li>
-<li>System complexity vs operational benefit</li>
-<li>Integration constraints vs performance</li>
-</ul>
+</div>
 
 <!-- VISUALS -->
-<h2>7. CAD Work</h2>
+<div class="project-section">
+<h2>CAD & Design Visuals</h2>
 
-<div class="grid-2">
-<img src="images/etaxi1.png" class="rounded shadow-lg">
-<img src="images/etaxi2.png" class="rounded shadow-lg">
+<div class="project-images">
+<img src="images/etaxi-cad1.png">
+<img src="images/etaxi-cad2.png">
 </div>
 
-<!-- CONCLUSION -->
-<h2>8. Outcome</h2>
+</div>
+
+<!-- INSIGHT -->
+<div class="project-section">
+<h2>Engineering Insight</h2>
 <p>
-The system demonstrated feasibility of electric taxiing with manageable integration
-penalties and strong operational benefits, particularly in fuel savings and emissions reduction.
+Electric taxiing improves fuel efficiency but introduces weight and integration challenges.
+The design requires balancing performance gains against system complexity.
 </p>
+</div>
 
 <!-- BACK -->
-<a href="index.html" class="btn-primary">
-← Back to Home
-</a>
+<a href="index.html" class="back-link">← Back to Portfolio</a>
 
 </div>
 
