@@ -404,3 +404,25 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* =========================
+   BACKGROUND SECTION (CLEAN LIST)
+========================= */
+
+.background-list {
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+.background-item {
+    margin-bottom: 25px;
+}
+
+.background-item h3 {
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.background-item p {
+    color: #94a3b8;
+}
