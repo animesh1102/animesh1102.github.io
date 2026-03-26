@@ -416,3 +416,28 @@ li {
     opacity: 1;
     transform: translateY(-4px);
 }
+
+/* =========================
+   ADDITIONAL PROJECTS FIX
+========================= */
+
+.small-projects {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: visible !important;
+    max-width: 900px;
+    margin: auto;
+    gap: 25px;
+}
+
+.small-projects .project-card {
+    flex: unset;
+    width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+    .small-projects {
+        grid-template-columns: 1fr;
+    }
+}
