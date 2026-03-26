@@ -397,3 +397,22 @@ li {
         grid-template-columns: 1fr;
     }
 }
+
+.small-projects {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+    margin: auto;
+    gap: 20px;
+}
+
+.small-projects .project-card {
+    background: #172033;
+    padding: 20px;
+    opacity: 0.85;
+    transition: all 0.25s ease;
+}
+
+.small-projects .project-card:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+}
