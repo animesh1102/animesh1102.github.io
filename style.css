@@ -426,3 +426,74 @@ footer {
 .background-item p {
     color: #94a3b8;
 }
+/* =========================
+   HORIZONTAL TIMELINE
+========================= */
+
+.timeline-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+/* LINE */
+.timeline-horizontal::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #1e293b;
+}
+
+/* ITEMS */
+.timeline-item {
+    text-align: center;
+    position: relative;
+    width: 25%;
+}
+
+/* DOT */
+.timeline-item .dot {
+    width: 14px;
+    height: 14px;
+    background: #3b82f6;
+    border-radius: 50%;
+    margin: 0 auto 15px auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* TEXT */
+.timeline-item h3 {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.timeline-item p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* MOBILE */
+@media (max-width: 800px) {
+
+    .timeline-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-horizontal::before {
+        display: none;
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
