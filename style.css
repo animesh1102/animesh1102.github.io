@@ -42,7 +42,7 @@ nav a {
     margin: 0 15px;
     color: #cbd5e1;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: 0.2s;
 }
 
 nav a:hover {
@@ -77,18 +77,12 @@ nav a:hover {
 
 .hero h1 {
     font-size: 48px;
-    line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .hero-description {
     color: #94a3b8;
     margin-bottom: 25px;
-    max-width: 500px;
-}
-
-.hero-buttons {
-    margin-top: 15px;
 }
 
 /* PHOTO */
@@ -102,11 +96,6 @@ nav a:hover {
     padding: 4px;
     border-radius: 16px;
     background: linear-gradient(135deg, #3b82f6, #6366f1, #8b5cf6);
-    transition: transform 0.3s ease;
-}
-
-.photo-frame:hover {
-    transform: scale(1.03);
 }
 
 .photo-frame img {
@@ -132,7 +121,8 @@ nav a:hover {
     border: 1px solid #475569;
     padding: 10px 18px;
     border-radius: 6px;
-    margin-left: 10px;
+    color: #cbd5e1;
+    text-decoration: none;
 }
 
 /* =========================
@@ -140,21 +130,24 @@ nav a:hover {
 ========================= */
 
 .section {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
-.light {
-    background: #f8fafc;
-    color: #0f172a;
-}
-
-.dark {
+.section.dark {
     background: #0b0f19;
+    border-top: 1px solid #1e293b;
 }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 20px;
+/* TEXT FIX */
+
+.section.dark h2,
+.section.dark h3 {
+    color: #ffffff;
+}
+
+.section.dark p,
+.section.dark li {
+    color: #cbd5e1;
 }
 
 .section-subtext {
@@ -162,80 +155,56 @@ nav a:hover {
     max-width: 600px;
     margin: auto;
     margin-bottom: 40px;
+    color: #94a3b8;
 }
 
 /* =========================
-   ABOUT CARDS
-========================= */
-
-.card {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* =========================
-   PROJECT SECTION
-========================= */
-
-/* =========================
-   PROJECT SECTION (CAROUSEL STYLE)
+   PROJECT CAROUSEL
 ========================= */
 
 .projects-wrapper {
     margin-top: 40px;
-
-    /* ✅ ADD THIS HERE */
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-}
-
-.projects-wrapper {
-    margin-top: 40px;
 }
 
 .projects-grid {
     display: flex;
     gap: 40px;
     overflow-x: auto;
-    padding: 20px 60px;  /* ✅ changed */
+    padding: 20px 60px;
+    scroll-snap-type: x mandatory;
 }
 
-
-/* Hide scrollbar */
 .projects-grid::-webkit-scrollbar {
     display: none;
 }
 
-/* PROJECT CARD */
 .project-card {
     flex: 0 0 420px;
     min-height: 260px;
-
     background: #1e293b;
     padding: 30px;
     border-radius: 16px;
-
     text-decoration: none;
     color: inherit;
-
     scroll-snap-align: center;
-
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: 0.3s ease;
+    border: 1px solid transparent;
 }
 
-/* TEXT */
 .project-card h3 {
     font-size: 22px;
+    color: white;
 }
 
 .project-card p {
     margin-top: 12px;
     font-size: 15px;
     line-height: 1.6;
+    color: #cbd5e1;
 }
 
-/* TAG */
 .project-tag {
     display: inline-block;
     margin-top: 15px;
@@ -243,12 +212,11 @@ nav a:hover {
     color: #3b82f6;
 }
 
-/* HOVER EFFECT */
 .project-card:hover {
     transform: scale(1.08);
+    border: 1px solid #3b82f6;
 }
 
-/* FADE NON-HOVER */
 .projects-grid:hover .project-card {
     opacity: 0.5;
 }
@@ -257,15 +225,30 @@ nav a:hover {
     opacity: 1;
 }
 
-/* MOBILE FIX */
-@media (max-width: 800px) {
-    .project-card {
-        flex: 0 0 300px;
-    }
+/* =========================
+   SMALL PROJECTS (NO SCROLL)
+========================= */
+
+.small-projects {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: visible !important;
+    max-width: 900px;
+    margin: auto;
+    gap: 25px;
 }
 
-/* EDUCATION */
+.small-projects .project-card {
+    flex: unset;
+    width: 100%;
+    background: #172033;
+}
 
+/* =========================
+   EXPERTISE + BACKGROUND
+========================= */
+
+.expertise-grid,
 .info-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -273,113 +256,34 @@ nav a:hover {
     margin-top: 40px;
 }
 
+.expertise-card,
 .info-card {
     background: #1e293b;
     padding: 25px;
     border-radius: 12px;
-    transition: all 0.25s ease;
+    transition: 0.25s ease;
 }
 
+.expertise-card h3,
 .info-card h3 {
-    margin-bottom: 10px;
     color: white;
+    margin-bottom: 10px;
 }
 
+.expertise-card p,
 .info-card p {
-    color: #94a3b8;
-    line-height: 1.5;
+    color: #cbd5e1;
+    line-height: 1.6;
 }
 
+.expertise-card:hover,
 .info-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
-@media (max-width: 800px) {
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-
 /* =========================
-   CONTACT
-========================= */
-
-.contact {
-    text-align: center;
-}
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #020617;
-    font-size: 14px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .hero-photo {
-        margin-top: 20px;
-    }
-}
-
-@media (max-width: 800px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* =========================
-   EXPERTISE SECTION
-========================= */
-
-.expertise-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.expertise-card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.expertise-card h3 {
-    margin-bottom: 10px;
-}
-
-.expertise-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-/* MOBILE */
-@media (max-width: 800px) {
-    .expertise-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* =========================
-   PROJECT PAGE
+   PROJECT PAGE (DETAIL)
 ========================= */
 
 .project-title {
@@ -399,22 +303,6 @@ footer {
     margin-bottom: 30px;
 }
 
-h2 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-}
-
-ul {
-    margin-bottom: 20px;
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 6px;
-}
-
-/* GRID */
-
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -422,105 +310,55 @@ li {
     margin: 20px 0;
 }
 
-/* DARK CARDS */
-
 .card-dark {
     background: #1e293b;
     padding: 20px;
     border-radius: 10px;
 }
 
-/* MOBILE */
+/* =========================
+   FOOTER
+========================= */
 
-@media (max-width: 800px) {
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
-}
-
-.small-projects {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
-    margin: auto;
-    gap: 20px;
-}
-
-.small-projects .project-card {
-    background: #172033;
+footer {
+    text-align: center;
     padding: 20px;
-    opacity: 0.85;
-    transition: all 0.25s ease;
-}
-
-.small-projects .project-card:hover {
-    opacity: 1;
-    transform: translateY(-4px);
+    background: #020617;
+    font-size: 14px;
 }
 
 /* =========================
-   ADDITIONAL PROJECTS FIX
+   RESPONSIVE
 ========================= */
 
-.small-projects {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    overflow: visible !important;
-    max-width: 900px;
-    margin: auto;
-    gap: 25px;
-}
+@media (max-width: 900px) {
 
-.small-projects .project-card {
-    flex: unset;
-    width: 100%;
-}
-
-/* MOBILE */
-@media (max-width: 800px) {
-    .small-projects {
+    .hero-grid {
         grid-template-columns: 1fr;
+        text-align: center;
     }
-}
 
-.project-card {
-    border: 1px solid transparent;
-}
+    .projects-grid {
+        padding: 20px;
+    }
 
-.project-card:hover {
-    border: 1px solid #3b82f6;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.info-card {
-    background: #1e293b;
-    padding: 25px;
-    border-radius: 12px;
-    transition: all 0.25s ease;
-}
-
-.info-card h3 {
-    margin-bottom: 10px;
-    color: white;
-}
-
-.info-card p {
-    color: #94a3b8;
-    line-height: 1.6;
-}
-
-.info-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 @media (max-width: 800px) {
-    .info-grid {
+
+    .projects-grid {
+        gap: 20px;
+    }
+
+    .project-card {
+        flex: 0 0 300px;
+    }
+
+    .small-projects,
+    .expertise-grid,
+    .info-grid,
+    .grid-2 {
         grid-template-columns: 1fr;
     }
+
 }
