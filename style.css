@@ -24,33 +24,39 @@ body {
    NAVBAR
 ========================= */
 
+/* NAVBAR CENTERED */
+
 .navbar {
     position: sticky;
     top: 0;
-    background: rgba(11,15,25,0.8);
-    backdrop-filter: blur(10px);
-    padding: 15px 0;
+
+    background: rgba(11,15,25,0.75); /* slightly more transparent */
+    backdrop-filter: blur(12px);
+
+    padding: 22px 0;  /* 🔥 increase height (was ~15px) */
 }
 
 .nav-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;   /* 🔥 THIS centers everything */
     align-items: center;
 }
 
+/* NAV LINKS */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
 nav a {
-    margin: 0 15px;
     color: #cbd5e1;
     text-decoration: none;
+    font-weight: 500;
     transition: 0.2s;
 }
 
 nav a:hover {
     color: white;
-}
-
-.logo {
-    font-weight: 700;
 }
 
 /* =========================
