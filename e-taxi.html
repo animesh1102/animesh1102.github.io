@@ -1,203 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electric Taxiing System (Airbus) | Animesh Donikar</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Electric Taxiing System (Airbus)</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-gray-900 text-gray-300">
 
-<!-- NAVBAR -->
-<header class="navbar">
-    <div class="container nav-content">
-        <div class="logo">Animesh Donikar</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
-    </div>
-</header>
+<div class="container">
 
-<!-- HERO -->
-<section class="section dark">
-    <div class="container">
+<!-- TITLE -->
+<h1 class="project-title">Electric Taxiing System (A320 Class)</h1>
 
-        <p class="hero-tag">Airbus Sponsored Project</p>
+<p class="project-subtitle">
+Airbus-Supported Project | Aircraft Systems Integration
+</p>
 
-        <h1>Electric Taxiing System Integration (A320 Class)</h1>
-
-        <p class="section-subtext">
-            Design and integration of an onboard electric taxiing system to eliminate engine-powered ground operations,
-            reducing emissions, fuel burn, and operational costs.
-        </p>
-
-    </div>
-</section>
+<p class="project-note">
+Due to project confidentiality, detailed schematics and proprietary data are not included.
+This page focuses on engineering methodology and system-level design decisions.
+</p>
 
 <!-- OVERVIEW -->
-<section class="section light">
-    <div class="container">
+<h2>1. Overview</h2>
+<p>
+This project involved the design and integration of an electric taxiing system to enable aircraft ground movement without main engine usage. The objective was to reduce fuel consumption, emissions, and operational costs during taxi operations.
+</p>
 
-        <h2>Project Overview</h2>
+<!-- SYSTEM -->
+<h2>2. System Concept</h2>
+<ul>
+<li>Electric motors integrated into main landing gear</li>
+<li>Power supplied via aircraft APU</li>
+<li>Independent wheel drive for manoeuvrability</li>
+<li>Gear reduction system for torque amplification</li>
+</ul>
 
-        <p>
-            This project focused on the development of an onboard electric taxiing (e-taxi) system for an A320-class aircraft.
-            The objective was to enable autonomous ground movement using electric propulsion integrated into the landing gear,
-            eliminating the need for main engine taxiing.
-        </p>
+<!-- CONTRIBUTION -->
+<h2>3. Engineering Work</h2>
 
-        <p>
-            The work involved motor sizing, gearbox design, and system-level integration while considering aircraft constraints
-            such as weight, power availability, and safety compliance.
-        </p>
+<div class="grid-2">
 
-    </div>
-</section>
+<div class="card-dark">
+<h3>Motor Sizing</h3>
+<p>
+Calculated required torque (~12,500 Nm per wheel) based on rolling resistance,
+taxi acceleration, and incline conditions.
+</p>
+</div>
 
-<!-- KEY ENGINEERING WORK -->
-<section class="section dark">
-    <div class="container">
+<div class="card-dark">
+<h3>Motor Selection</h3>
+<p>
+Selected EMRAX 348 axial flux motor due to high power density and low mass,
+delivering ~400 kW peak output.
+</p>
+</div>
 
-        <h2>Key Engineering Contributions</h2>
+<div class="card-dark">
+<h3>Gearbox Design</h3>
+<p>
+Designed two-stage planetary gearbox (~16:1 ratio) to convert high motor RPM
+into required wheel torque.
+</p>
+</div>
 
-        <div class="projects-grid">
+<div class="card-dark">
+<h3>Integration</h3>
+<p>
+Integrated motor and gearbox within landing gear while maintaining structural
+and geometric constraints of the aircraft.
+</p>
+</div>
 
-            <div class="project-card">
-                <h3>Motor Sizing</h3>
-                <p>
-                    Determined torque requirement of ~25,000 Nm total (~12,500 Nm per wheel)
-                    based on rolling resistance, slope, and acceleration conditions.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Motor Selection</h3>
-                <p>
-                    Selected EMRAX 348 AFPM motor for its high power density,
-                    achieving ~400 kW peak power with low mass (~41 kg).
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Gearbox Design</h3>
-                <p>
-                    Designed a two-stage planetary gearbox (~16:1 ratio) to convert
-                    high RPM (~4000) into required high torque output.
-                </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Landing Gear Integration</h3>
-                <p>
-                    Integrated motor and gearbox within the main landing gear,
-                    ensuring compatibility with wheel hub geometry and retraction envelope.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
+</div>
 
 <!-- PERFORMANCE -->
-<section class="section light">
-    <div class="container">
+<h2>4. Performance</h2>
 
-        <h2>Performance & Results</h2>
+<ul>
+<li>Total power requirement: ~237 kW</li>
+<li>Motor mass: ~41 kg</li>
+<li>System mass: ~90 kg per wheel</li>
+<li>Fuel penalty: ~0.1% per mission</li>
+</ul>
 
-        <div class="projects-grid">
+<!-- ENGINEERING -->
+<h2>5. Engineering Considerations</h2>
+<ul>
+<li>Thermal management of motor and gearbox</li>
+<li>Structural load transfer through landing gear</li>
+<li>Power availability from APU</li>
+<li>Redundancy and safety under failure conditions</li>
+</ul>
 
-            <div class="project-card">
-                <h3>Power Requirement</h3>
-                <p>
-                    Total system power requirement ~237 kW during taxiing,
-                    supplied via aircraft APU systems.
-                </p>
-            </div>
+<!-- TRADE OFFS -->
+<h2>6. Trade-Offs</h2>
+<ul>
+<li>Weight vs fuel savings</li>
+<li>System complexity vs operational benefit</li>
+<li>Integration constraints vs performance</li>
+</ul>
 
-            <div class="project-card">
-                <h3>System Mass</h3>
-                <p>
-                    Total added mass ~90 kg per wheel including motor and gearbox,
-                    within acceptable aircraft limits.
-                </p>
-            </div>
+<!-- VISUALS -->
+<h2>7. CAD Work</h2>
 
-            <div class="project-card">
-                <h3>Fuel Impact</h3>
-                <p>
-                    Estimated fuel penalty ~0.1% per mission,
-                    significantly offset by taxi fuel savings.
-                </p>
-            </div>
+<div class="grid-2">
+<img src="images/etaxi1.png" class="rounded shadow-lg">
+<img src="images/etaxi2.png" class="rounded shadow-lg">
+</div>
 
-            <div class="project-card">
-                <h3>Safety</h3>
-                <p>
-                    Gear system designed with load factors well above 1.5,
-                    ensuring structural safety under operational loads.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- NDA NOTE -->
-<section class="section dark">
-    <div class="container">
-
-        <h2>Confidentiality Note</h2>
-
-        <p class="section-subtext">
-            This project was conducted under Airbus collaboration.
-            Detailed technical data, proprietary architectures, and internal specifications
-            are not disclosed. The information presented here reflects high-level engineering work only.
-        </p>
-
-    </div>
-</section>
-
-<!-- IMAGES -->
-<section class="section light">
-    <div class="container">
-
-        <h2>CAD & Visual Work</h2>
-
-        <p class="section-subtext">
-            Selected visuals from CAD modelling and system integration (non-confidential).
-        </p>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="images/etaxi1.png" alt="CAD Model" style="width:100%; border-radius:8px;">
-            </div>
-
-            <div class="project-card">
-                <img src="images/etaxi2.png" alt="Integration Model" style="width:100%; border-radius:8px;">
-            </div>
-
-        </div>
-
-    </div>
-</section>
+<!-- CONCLUSION -->
+<h2>8. Outcome</h2>
+<p>
+The system demonstrated feasibility of electric taxiing with manageable integration
+penalties and strong operational benefits, particularly in fuel savings and emissions reduction.
+</p>
 
 <!-- BACK -->
-<section class="section dark">
-    <div class="container" style="text-align:center;">
-        <a href="index.html" class="btn-primary">← Back to Projects</a>
-    </div>
-</section>
+<a href="index.html" class="btn-primary">
+← Back to Home
+</a>
 
-<!-- FOOTER -->
-<footer>
-    <p>© 2026 Animesh Donikar</p>
-</footer>
+</div>
 
 </body>
 </html>
