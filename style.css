@@ -362,3 +362,45 @@ footer {
     }
 
 }
+
+.center {
+    text-align: center;
+}
+
+/* CTA inside project */
+.project-cta {
+    display: block;
+    margin-top: 15px;
+    color: #3b82f6;
+    font-size: 14px;
+}
+
+/* TIMELINE */
+.timeline {
+    margin-top: 40px;
+    border-left: 2px solid #1e293b;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 25px;
+}
+
+/* CERTIFICATION SPLIT */
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.split-layout ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+@media (max-width: 800px) {
+    .split-layout {
+        grid-template-columns: 1fr;
+    }
+}
