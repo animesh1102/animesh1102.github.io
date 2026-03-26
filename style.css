@@ -76,15 +76,11 @@ nav a:hover {
 
 .hero {
     padding: 100px 0;
-    background: radial-gradient(circle at top, #111827, #020617);
-}
-.hero {
-    padding: 100px 0;
 
     background:
         linear-gradient(to left, rgba(11,15,25,0.0) 0%, rgba(11,15,25,0.9) 70%),
         linear-gradient(rgba(11,15,25,0.85), rgba(11,15,25,0.95)),
-        url("images/main website");
+        url("images/hero1.jpg");
 
     background-size: cover;
     background-position: right center;
