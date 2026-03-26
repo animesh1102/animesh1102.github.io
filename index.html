@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Animesh Donikar | Aerospace Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,97 +17,69 @@
         <div class="logo">AD</div>
         <nav>
             <a href="#projects">Projects</a>
-            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
-        <a href="#" class="btn-primary">Download CV</a>
     </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-
     <div class="container hero-grid">
 
-        <!-- LEFT: TEXT -->
-        <div class="hero-text">
-
+        <div>
             <p class="hero-tag">Aerospace Engineer</p>
 
-            <h1>
-                Designing efficient aircraft structures and systems
-            </h1>
+            <h1>Animesh Donikar</h1>
+
+            <p class="hero-keywords">
+                Aircraft Systems • Structures • Integration
+            </p>
 
             <p class="hero-description">
                 MSc Aerospace Vehicle Design graduate specialising in aircraft systems and structural analysis.
-                Experienced in Airbus-supported projects involving fuel system architecture, electric taxiing 
-                integration, and computational wing analysis, with a strong focus on safety, performance, and 
-                certification-driven design.
+                Experience working on Airbus-supported projects including fuel system architecture, electric taxiing
+                integration, and computational wing analysis, with a strong focus on safety and CS-25 certification.
             </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn-primary">View Projects</a>
-                <a href="#contact" class="btn-secondary">Connect</a>
-            </div>
-
         </div>
 
-        <!-- RIGHT: PHOTO -->
         <div class="hero-photo">
             <div class="photo-frame">
-                <img src="linkedin photo01.png" alt="Animesh Donikar">
+                <img src="images/profile.jpg" alt="Profile">
             </div>
         </div>
 
     </div>
-
 </section>
 
-
-    <!-- EDUCATION -->
-            <section class="section dark">
+<!-- EXPERIENCE (TIMELINE STYLE) -->
+<section id="experience" class="section dark">
 
     <div class="container">
 
-        <h2>Background & Experience</h2>
+        <h2 class="center">Background & Experience</h2>
 
-        <p class="section-subtext">
-            Academic and practical experience in aerospace engineering, with exposure to real-world systems,
-            design methodologies, and industry environments.
-        </p>
+        <div class="timeline">
 
-        <div class="info-grid">
-
-            <div class="info-card">
-                <h3>Education</h3>
-                <p>
-                    MSc Aerospace Vehicle Design – Cranfield University<br>
-                    BTech Aerospace Engineering – SRM University
-                </p>
+            <div class="timeline-item">
+                <h3>Cranfield University</h3>
+                <p>MSc Aerospace Vehicle Design (2024)</p>
             </div>
 
-            <div class="info-card">
-                <h3>Technical Skills</h3>
-                <p>
-                    CATIA V5, SolidWorks, MATLAB, ANSYS Fluent<br>
-                    Systems Engineering, CAD Modelling, Simulation
-                </p>
+            <div class="timeline-item">
+                <h3>Airbus Projects</h3>
+                <p>Fuel systems & electric taxiing system design</p>
             </div>
 
-            <div class="info-card">
-                <h3>Industry Exposure</h3>
-                <p>
-                    Experience working on Airbus-supported projects involving aircraft systems,
-                    integration, and certification-driven design.
-                </p>
+            <div class="timeline-item">
+                <h3>Propulsion Internship</h3>
+                <p>Rocket propulsion systems, testing and data acquisition</p>
             </div>
 
-            <div class="info-card">
-                <h3>Core Strengths</h3>
-                <p>
-                    Problem-solving, analytical thinking, teamwork, and structured engineering approach
-                    in complex aerospace environments.
-                </p>
+            <div class="timeline-item">
+                <h3>SRM University</h3>
+                <p>BTech Aerospace Engineering (2022)</p>
             </div>
 
         </div>
@@ -115,54 +87,44 @@
     </div>
 
 </section>
-
+    
 <!-- PROJECTS -->
 <section id="projects" class="section dark">
 
     <div class="container">
 
-        <h2>Engineering Projects</h2>
+        <h2 class="center">Engineering Projects</h2>
 
         <p class="section-subtext">
-            Aerospace engineering work focused on aircraft structures, systems design,
-            and performance-driven analysis.
+            Real-world aerospace engineering work focused on systems, structures, and performance.
         </p>
 
-        <div class="projects-wrapper">
+    </div>
 
-            <div class="projects-grid">
+    <div class="projects-wrapper">
 
-                <!-- PROJECT 1 -->
-                <a href="fuel-system.html" class="project-card">
-                    <h3>Fuel System Architecture (Airbus)</h3>
-                    <p>
-                        Design of venting, inerting and water management systems for an A320-class aircraft,
-                        aligned with CS-25 certification requirements.
-                    </p>
-                    <span class="project-tag">Systems • Airbus • CS-25</span>
-                </a>
+        <div class="projects-grid">
 
-                <!-- PROJECT 2 -->
-                <a href="e-taxi.html" class="project-card">
-                    <h3>Electric Taxiing System (Airbus)</h3>
-                    <p>
-                        Integration of electric propulsion into landing gear, including torque transmission
-                        and system-level performance analysis.
-                    </p>
-                    <span class="project-tag">Design • Integration • Performance</span>
-                </a>
+            <a href="fuel-system.html" class="project-card">
+                <h3>Fuel System Architecture</h3>
+                <p>Designed aircraft fuel system including venting, inerting, and water management aligned with CS-25.</p>
+                <span class="project-tag">Systems • Airbus</span>
+                <span class="project-cta">View Project →</span>
+            </a>
 
-                <!-- PROJECT 3 -->
-                <a href="personalproject-A320.html" class="project-card">
-                    <h3>A320 Wing Structural Analysis</h3>
-                    <p>
-                        Numerical modelling of lift distribution, bending moment, and stress response
-                        using beam theory and computational methods.
-                    </p>
-                    <span class="project-tag">Structures • MATLAB • Analysis</span>
-                </a>
+            <a href="e-taxi.html" class="project-card">
+                <h3>Electric Taxiing System</h3>
+                <p>Integrated electric propulsion into landing gear including motor sizing and gearbox design.</p>
+                <span class="project-tag">Integration • Airbus</span>
+                <span class="project-cta">View Project →</span>
+            </a>
 
-            </div>
+            <a href="personalproject-A320.html" class="project-card">
+                <h3>A320 Wing Structural Analysis</h3>
+                <p>Analysed bending moment and stress distribution using computational modelling.</p>
+                <span class="project-tag">Structures • MATLAB</span>
+                <span class="project-cta">View Project →</span>
+            </a>
 
         </div>
 
@@ -170,82 +132,32 @@
 
 </section>
 
-<section class="section dark">
-    <div class="container">
 
-        <h2>Additional Projects & Experience</h2>
-
-        <p class="section-subtext">
-            Earlier academic and industry work demonstrating foundational engineering skills and practical experience.
-        </p>
-
-        <div class="projects-grid small-projects">
-
-            <div class="project-card">
-                <h3>OmSpace Rocket and Exploration</h3>
-                <p>
-                    Brief description of what you did. Focus on tools, impact, and engineering thinking.
-                </p>
-                <span class="project-tag">Industry • Practical Work</span>
-            </div>
-
-            <div class="project-card">
-                <h3>Solar Thermal Propulsion System</h3>
-                <p>
-                    Brief description. Highlight fundamentals (structures, CFD, design, etc).
-                </p>
-                <span class="project-tag">Academic • Foundation</span>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section class="section dark">
+<!-- CERTIFICATIONS + ACTIVITIES -->
+<section id="certifications" class="section dark">
 
     <div class="container">
 
-        <h2>Engineering Expertise</h2>
+        <h2 class="center">Certifications & Activities</h2>
 
-        <p class="section-subtext">
-            Focused on delivering structured, analysis-driven solutions across aircraft structures,
-            systems integration, and computational modelling.
-        </p>
+        <div class="split-layout">
 
-        <div class="expertise-grid">
-
-            <div class="expertise-card">
-                <h3>Structural Analysis</h3>
-                <p>
-                    Load modelling, stress evaluation, and structural efficiency optimisation
-                    using analytical and computational methods.
-                </p>
+            <div>
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Systems Engineering Fundamentals (Coursera)</li>
+                    <li>Aerospace Systems Engineering (edX)</li>
+                    <li>Aircraft Maintenance (NPTEL)</li>
+                </ul>
             </div>
 
-            <div class="expertise-card">
-                <h3>Systems Engineering</h3>
-                <p>
-                    Aircraft systems architecture, integration, and certification-driven
-                    design aligned with CS-25 requirements.
-                </p>
-            </div>
-
-            <div class="expertise-card">
-                <h3>Computational Modelling</h3>
-                <p>
-                    MATLAB-based numerical methods for solving engineering problems,
-                    including load distribution and performance analysis.
-                </p>
-            </div>
-
-            <div class="expertise-card">
-                <h3>Design Thinking</h3>
-                <p>
-                    Engineering decisions driven by performance, safety, and real-world
-                    constraints rather than theoretical assumptions.
-                </p>
+            <div>
+                <h3>Activities</h3>
+                <ul>
+                    <li>Visited Airbus Defence facility</li>
+                    <li>CubeSat design competition</li>
+                    <li>Aircraft design competition (Top 5)</li>
+                </ul>
             </div>
 
         </div>
@@ -253,26 +165,30 @@
     </div>
 
 </section>
-    
-            
-    
+
 <!-- CONTACT -->
 <section id="contact" class="section dark">
-    <div class="container contact">
+
+    <div class="container center">
 
         <h2>Contact</h2>
-        <p>For opportunities, collaborations, or engineering discussions.</p>
 
-        <div class="contact-info">
-            <p><strong>Email:</strong> animesh.donikar@gmail.com</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/animesh-donikar-369411192</p>
-        </div>
+        <p class="section-subtext">
+            Open to opportunities in aerospace engineering and systems design.
+        </p>
+
+        <p>
+            animesh.donikar@gmail.com<br>
+            LinkedIn: animesh-donikar
+        </p>
 
     </div>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
-    <p>© 2025 Animesh Donikar</p>
+    <p>© 2026 Animesh Donikar</p>
 </footer>
 
 </body>
