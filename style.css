@@ -528,3 +528,25 @@ footer {
         margin-bottom: 30px;
     }
 }
+/* =========================
+   PROJECTS ALIGNMENT FIX
+========================= */
+
+.projects-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.projects-grid {
+    width: 100%;
+    max-width: 1100px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Ensure container is centered */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
