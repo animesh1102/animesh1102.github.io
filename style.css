@@ -78,7 +78,7 @@ nav a:hover {
     padding: 100px 0;
 
     background:
-        linear-gradient(to left, rgba(11,15,25,0.0) 0%, rgba(11,15,25,0.7) 70%),
+        linear-gradient(to left, rgba(11,15,25,0.0) 0%, rgba(11,15,25,0.2) 50%),
         linear-gradient(rgba(11,15,25,0.85), rgba(11,15,25,0.95)),
         url("images/hero1.jpg");
 
