@@ -1,111 +1,96 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electric Taxiing System</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Electric taxiing system integration project by Animesh Donikar.">
+    <title>Electric Taxiing System | Animesh Donikar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="project-page">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Animesh Donikar home"><span class="brand-mark">AD</span><span>Animesh Donikar</span></a>
+        <nav class="nav-links" aria-label="Project navigation">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#additional-projects">Additional</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <a class="header-action" href="index.html">Portfolio</a>
+    </header>
 
-<body>
+    <main class="project-detail-main">
+        <section class="project-hero">
+            <div class="project-hero-copy">
+                <p class="eyebrow">Airbus project | Integration</p>
+                <h1>Electric Taxiing System</h1>
+                <p class="project-summary">Landing-gear-integrated electric taxiing concept to reduce main-engine ground operation, with attention to motor sizing, gearbox transmission, packaging, and system-level aircraft impact.</p>
+                <div class="project-actions">
+                    <a class="button button-primary" href="#work">Read case study</a>
+                    <a class="button button-secondary" href="index.html#projects">Back to projects</a>
+                </div>
+            </div>
+            <aside class="project-fact-card" aria-label="Project facts">
+                <dl>
+                    <div><dt>Focus</dt><dd>Motor sizing, gearbox design, landing gear integration</dd></div>
+                    <div><dt>Context</dt><dd>Airbus-supported Cranfield group project</dd></div>
+                    <div><dt>Outcome</dt><dd>Concept trade study for fuel and emissions reduction</dd></div>
+                </dl>
+            </aside>
+        </section>
 
-<div class="project-container">
+        <div class="project-content" id="work">
+            <section class="project-section-block">
+                <h2>Problem</h2>
+                <div class="section-copy"><p>Design an onboard electric propulsion concept capable of moving the aircraft during taxi without relying on main engine thrust, while respecting the landing gear environment and aircraft-level weight penalties.</p><p class="project-note">Detailed design data is confidential, so the page shows the public engineering structure rather than protected geometry or values.</p></div>
+            </section>
 
-<!-- HERO -->
-<div class="project-images">
-<img src="images/etaxi-hero.png">
-</div>
+            <section class="project-section-block">
+                <h2>Approach</h2>
+                <div class="section-copy">
+                    <ul>
+                        <li>Estimated the torque and power needed for ground taxiing at aircraft scale.</li>
+                        <li>Selected an electric motor concept around low-speed torque demand.</li>
+                        <li>Created a transmission path through a gearbox to transfer torque into the wheel system.</li>
+                        <li>Reviewed landing gear packaging, structure, maintainability, and installation constraints.</li>
+                        <li>Balanced operational fuel saving against added mass, complexity, and safety impact.</li>
+                    </ul>
+                </div>
+            </section>
 
-<!-- HEADER -->
-<div class="project-header">
-<h1>Electric Taxiing System (Airbus Project)</h1>
+            <section class="project-section-block">
+                <h2>Engineering Work</h2>
+                <div class="project-grid">
+                    <article class="project-info-tile"><h3>Motor Selection</h3><p>Torque and power sizing based on aircraft ground movement and low-speed wheel demand.</p></article>
+                    <article class="project-info-tile"><h3>Transmission</h3><p>Gearbox concept to convert motor output into useful wheel torque within limited packaging space.</p></article>
+                    <article class="project-info-tile"><h3>Integration</h3><p>Landing gear constraints, clearance, mass, inspection access, and structural attachment considerations.</p></article>
+                    <article class="project-info-tile"><h3>Performance</h3><p>Fuel burn, emissions, taxi operation, and aircraft-level efficiency trade-offs.</p></article>
+                </div>
+            </section>
 
-<p class="project-meta">
-Mechanical Design | Integration | Performance Analysis
-</p>
+            <section class="project-section-block">
+                <h2>Visual Space</h2>
+                <div class="media-grid">
+                    <figure class="media-slot"><img src="images/etaxipage.png" alt="Electric taxiing project preview"></figure>
+                    <figure class="media-slot placeholder"><strong>Landing gear CAD space</strong><span>Reserved for future motor, gearbox, and wheel integration visuals.</span></figure>
+                    <figure class="media-slot placeholder"><strong>Torque sizing graph</strong><span>Reserved for torque, speed, power, or efficiency plots.</span></figure>
+                    <figure class="media-slot placeholder"><strong>Trade study graphic</strong><span>Reserved for fuel saving, added mass, and operating-case comparisons.</span></figure>
+                </div>
+            </section>
 
-<p>
-Developed an electric taxiing system integrated into landing gear to reduce fuel consumption and emissions during ground operations.
-</p>
+            <section class="project-section-block">
+                <h2>Insight</h2>
+                <div class="section-copy"><p>Electric taxiing can reduce ground fuel burn and emissions, but the engineering challenge is not only motor performance. The concept has to earn back its weight, integration effort, safety complexity, and maintenance burden at aircraft level.</p></div>
+            </section>
+        </div>
 
-<p><strong>Note:</strong> Detailed design confidential. High-level approach shown.</p>
-</div>
-
-<!-- PROBLEM -->
-<div class="project-section">
-<h2>Problem</h2>
-<p>
-Design an onboard electric propulsion system capable of taxiing an aircraft independently of main engines.
-</p>
-</div>
-
-<!-- APPROACH -->
-<div class="project-section">
-<h2>Approach</h2>
-<ul>
-<li>Integrated electric motor into main landing gear</li>
-<li>Designed torque transmission using gearbox system</li>
-<li>Evaluated power requirements and efficiency</li>
-<li>Assessed system weight and impact on aircraft performance</li>
-</ul>
-</div>
-
-<!-- ENGINEERING WORK -->
-<div class="project-section">
-<h2>Engineering Work</h2>
-
-<div class="grid-2">
-
-<div class="card-dark">
-<h3>Motor Selection</h3>
-<p>Torque and power sizing based on aircraft weight</p>
-</div>
-
-<div class="card-dark">
-<h3>Transmission</h3>
-<p>Gearbox design for torque transfer</p>
-</div>
-
-<div class="card-dark">
-<h3>Integration</h3>
-<p>Landing gear constraints and structural considerations</p>
-</div>
-
-<div class="card-dark">
-<h3>Performance</h3>
-<p>Fuel savings and operational efficiency analysis</p>
-</div>
-
-</div>
-
-</div>
-
-<!-- VISUALS -->
-<div class="project-section">
-<h2>CAD & Design Visuals</h2>
-
-<div class="project-images">
-<img src="images/etaxi-cad1.png">
-<img src="images/etaxi-cad2.png">
-</div>
-
-</div>
-
-<!-- INSIGHT -->
-<div class="project-section">
-<h2>Engineering Insight</h2>
-<p>
-Electric taxiing improves fuel efficiency but introduces weight and integration challenges.
-The design requires balancing performance gains against system complexity.
-</p>
-</div>
-
-<!-- BACK -->
-<a href="index.html" class="back-link">← Back to Portfolio</a>
-
-</div>
-
+        <nav class="project-bottom-nav" aria-label="Project links">
+            <a class="button button-secondary" href="fuel-system.html">Previous project</a>
+            <a class="button button-primary" href="personalproject-A320.html">Next project</a>
+        </nav>
+    </main>
 </body>
 </html>

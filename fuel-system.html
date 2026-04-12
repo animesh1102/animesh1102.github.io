@@ -1,174 +1,113 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aircraft Fuel System Design</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aircraft fuel system architecture project by Animesh Donikar.">
+    <title>Aircraft Fuel System Architecture | Animesh Donikar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+<body class="project-page">
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Animesh Donikar home">
+            <span class="brand-mark">AD</span>
+            <span>Animesh Donikar</span>
+        </a>
+        <nav class="nav-links" aria-label="Project navigation">
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#additional-projects">Additional</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <a class="header-action" href="index.html">Portfolio</a>
+    </header>
 
-<body>
+    <main class="project-detail-main">
+        <section class="project-hero">
+            <div class="project-hero-copy">
+                <p class="eyebrow">Airbus project | Systems engineering</p>
+                <h1>Aircraft Fuel System Architecture</h1>
+                <p class="project-summary">Conceptual fuel system architecture for an A320-class aircraft, focused on safe storage, transfer, venting, inerting, and water management under certification-led constraints.</p>
+                <div class="project-actions">
+                    <a class="button button-primary" href="#work">Read case study</a>
+                    <a class="button button-secondary" href="index.html#projects">Back to projects</a>
+                </div>
+            </div>
+            <aside class="project-fact-card" aria-label="Project facts">
+                <dl>
+                    <div><dt>Focus</dt><dd>Fuel storage, venting, inerting, water drainage</dd></div>
+                    <div><dt>Context</dt><dd>Airbus-supported Cranfield group project</dd></div>
+                    <div><dt>Methods</dt><dd>CS-25 review, architecture definition, safety thinking</dd></div>
+                </dl>
+            </aside>
+        </section>
 
-<div class="project-container">
+        <div class="project-content" id="work">
+            <section class="project-section-block">
+                <h2>Problem</h2>
+                <div class="section-copy">
+                    <p>Design a fuel system concept that keeps the aircraft supplied across operating conditions while controlling tank pressure, reducing ignition risk, and managing water contamination.</p>
+                    <p class="project-note">Detailed design data is confidential, so this page presents the high-level engineering approach and decision areas.</p>
+                </div>
+            </section>
 
-<!-- HEADER -->
-<div class="project-header">
+            <section class="project-section-block">
+                <h2>Approach</h2>
+                <div class="section-copy">
+                    <ul>
+                        <li>Defined the fuel storage and transfer architecture for a transport aircraft concept.</li>
+                        <li>Mapped venting needs to tank pressure control and safe operating envelopes.</li>
+                        <li>Integrated an inerting concept using OBIGGS-style oxygen reduction logic.</li>
+                        <li>Built a water drainage and contamination control strategy around aircraft serviceability.</li>
+                        <li>Kept certification expectations visible while shaping subsystem decisions.</li>
+                    </ul>
+                </div>
+            </section>
 
-    <h1>Aircraft Fuel System Architecture (Airbus Project)</h1>
+            <section class="project-section-block">
+                <h2>Engineering Work</h2>
+                <div class="project-grid">
+                    <article class="project-info-tile"><h3>System Architecture</h3><p>Fuel tank configuration, piping logic, equipment placement, and subsystem interaction.</p></article>
+                    <article class="project-info-tile"><h3>Venting and Pressure</h3><p>Pressure equilibrium logic for tank integrity across climb, cruise, descent, and refuelling cases.</p></article>
+                    <article class="project-info-tile"><h3>Inerting System</h3><p>Reduced flammability risk through oxygen concentration management and inert gas distribution.</p></article>
+                    <article class="project-info-tile"><h3>Safety and Certification</h3><p>Design choices framed around CS-25 expectations, redundancy, maintainability, and failure tolerance.</p></article>
+                </div>
+            </section>
 
-    <p class="project-meta">
-        Systems Engineering | CS-25 Compliance | Safety-Critical Design
-    </p>
+            <section class="project-section-block">
+                <h2>Visual Space</h2>
+                <div class="media-grid">
+                    <figure class="media-slot"><img src="images/fuelpage.png" alt="Fuel system project preview"></figure>
+                    <figure class="media-slot placeholder"><strong>Architecture diagram space</strong><span>Reserved for a simplified fuel storage, venting, inerting, and drainage diagram.</span></figure>
+                    <figure class="media-slot placeholder"><strong>Trade study or safety chart</strong><span>Reserved for FMEA notes, CS-25 mapping, or system safety visuals.</span></figure>
+                    <figure class="media-slot placeholder"><strong>Subsystem layout</strong><span>Reserved for future component placement or flow-path imagery.</span></figure>
+                </div>
+            </section>
 
-    <p>
-        Developed a conceptual fuel system architecture for an A320-class aircraft,
-        including venting, inerting, and water management systems aligned with
-        certification requirements.
-    </p>
+            <section class="project-section-block">
+                <h2>Insight</h2>
+                <div class="section-copy"><p>Fuel system design is safety-critical because storage, transfer, venting, inerting, and drainage decisions affect each other. The design trade is not only technical performance, but also weight, redundancy, maintainability, and certifiability.</p></div>
+            </section>
 
-    <p><strong>Tools:</strong> System Architecture Design | CS-25 | Safety Analysis</p>
+            <section class="project-section-block">
+                <h2>Next Steps</h2>
+                <div class="section-copy">
+                    <ul>
+                        <li>Develop a detailed FMEA and fault tree for the fuel system functions.</li>
+                        <li>Model transient fuel behaviour, water accumulation, and vent pressure response.</li>
+                        <li>Convert the concept architecture into a component-level validation plan.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
 
-    <p><strong>Note:</strong> Detailed design is confidential. High-level engineering approach presented.</p>
-
-</div>
-
-<!-- PROBLEM -->
-<div class="project-section">
-<h2>Problem</h2>
-
-<p>
-Design a fuel system that ensures safe storage, transfer, and delivery of fuel
-while maintaining tank pressure, preventing ignition risk, and complying with
-CS-25 certification requirements.
-</p>
-
-</div>
-
-<!-- APPROACH -->
-<div class="project-section">
-<h2>Approach</h2>
-
-<ul>
-<li>Defined system architecture for fuel storage and transfer</li>
-<li>Designed venting system to maintain pressure equilibrium</li>
-<li>Integrated inerting system (OBIGGS) to reduce flammability risk</li>
-<li>Developed water drainage and contamination control strategy</li>
-<li>Aligned all subsystems with CS-25 safety requirements</li>
-</ul>
-
-</div>
-
-<!-- ENGINEERING WORK -->
-<div class="project-section">
-<h2>Engineering Work</h2>
-
-<div class="grid-2">
-
-<div class="card-dark">
-<h3>System Architecture</h3>
-<p>Fuel tank configuration, piping network, and subsystem integration</p>
-</div>
-
-<div class="card-dark">
-<h3>Venting & Pressure</h3>
-<p>Maintaining pressure limits to avoid structural or operational risks</p>
-</div>
-
-<div class="card-dark">
-<h3>Inerting System</h3>
-<p>Reduction of oxygen concentration using OBIGGS concept</p>
-</div>
-
-<div class="card-dark">
-<h3>Safety & Certification</h3>
-<p>Compliance with CS-25 requirements for fuel system safety</p>
-</div>
-
-</div>
-
-</div>
-
-<!-- VISUALS -->
-<div class="project-section">
-<h2>System Visualisation</h2>
-
-<div class="project-images">
-<img src="images/fuel-diagram.png">
-<img src="images/fuel-layout.png">
-</div>
-
-</div>
-
-<!-- ENGINEERING INSIGHT -->
-<div class="project-section">
-<h2>Engineering Insight</h2>
-
-<p>
-Fuel system design is inherently safety-critical. The integration of venting,
-inerting, and drainage systems ensures safe operation under varying flight
-conditions. System redundancy and certification constraints significantly
-influence design complexity.
-</p>
-
-</div>
-
-<!-- DESIGN DRIVERS -->
-<div class="project-section">
-<h2>Key Design Drivers</h2>
-
-<ul>
-<li>Safety requirements dominate system architecture</li>
-<li>Pressure control is critical to tank integrity</li>
-<li>Weight vs redundancy trade-offs</li>
-<li>Certification constraints drive design decisions</li>
-</ul>
-
-</div>
-
-<!-- ENGINEERING ASSESSMENT -->
-<div class="project-section">
-<h2>Engineering Assessment</h2>
-
-<p>
-The system satisfies conceptual safety and performance requirements under
-standard operating conditions. However, detailed validation would require
-failure analysis, redundancy verification, and compliance testing.
-</p>
-
-</div>
-
-<!-- LIMITATIONS -->
-<div class="project-section">
-<h2>Limitations</h2>
-
-<ul>
-<li>No detailed failure mode analysis (FMEA)</li>
-<li>No dynamic fuel sloshing effects considered</li>
-<li>Simplified system modelling</li>
-<li>No hardware validation</li>
-</ul>
-
-</div>
-
-<!-- NEXT STEPS -->
-<div class="project-section">
-<h2>Next Steps</h2>
-
-<ul>
-<li>Perform detailed FMEA and safety analysis</li>
-<li>Model transient fuel behaviour</li>
-<li>Validate system through simulation or testing</li>
-<li>Develop detailed component-level design</li>
-</ul>
-
-</div>
-
-<!-- BACK -->
-<a href="index.html" class="back-link">← Back to Portfolio</a>
-
-</div>
-
+        <nav class="project-bottom-nav" aria-label="Project links">
+            <a class="button button-secondary" href="index.html#projects">Back to portfolio</a>
+            <a class="button button-primary" href="e-taxi.html">Next project</a>
+        </nav>
+    </main>
 </body>
 </html>
