@@ -4,274 +4,212 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Animesh Donikar | Aerospace Engineer</title>
-<link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<header class="navbar">
-    <div class="container nav-content">
-        <div class="logo">AD</div>
-        <nav>
+<header class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="#" class="nav-logo">Animesh Donikar</a>
+        <nav class="nav-links">
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#about">Expertise</a>
+            <a href="#expertise">Expertise</a>
             <a href="#contact">Contact</a>
         </nav>
+        <a href="Animesh_Donikar_CV.pdf" download class="nav-cta">Download CV</a>
     </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="container hero-grid">
-
-        <div class="hero-text">
-            <p class="hero-tag">
-                <span class="tag-dot"></span>
-                Aerospace Engineer
-            </p>
-            <h1>Animesh<br>Donikar</h1>
-            <p class="hero-description">
-                MSc Aerospace Vehicle Design graduate from Cranfield University, specialising in aircraft systems and structural analysis. Contributor to Airbus-supported projects including fuel system architecture, electric taxiing integration, and computational wing analysis.
-            </p>
-            <div class="hero-actions">
-                <a href="Animesh_Donikar_CV.pdf" download class="btn-primary">
-                    Download CV
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                </a>
-                <a href="#projects" class="btn-ghost">View Projects →</a>
-            </div>
+    <div class="hero-content">
+        <p class="hero-eyebrow">Aerospace Engineer · Bristol, UK</p>
+        <h1 class="hero-title">
+            Designing aircraft<br>
+            <em>systems that fly.</em>
+        </h1>
+        <p class="hero-body">
+            MSc Aerospace Vehicle Design, Cranfield University. Contributor to Airbus-supported projects in fuel systems, electric taxiing, and structural analysis. Specialising in aircraft structures and systems integration.
+        </p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn-dark">View Projects</a>
+            <a href="#contact" class="btn-light">Get in Touch</a>
         </div>
-
-        <div class="hero-photo">
-            <div class="photo-wrapper">
-                <div class="photo-frame">
-                    <img src="linkedin photo01.png" alt="Animesh Donikar">
-                </div>
-                <div class="photo-accent"></div>
-            </div>
-        </div>
-
     </div>
-
-    <div class="hero-stats container">
-        <div class="stat">
-            <span class="stat-number">5</span>
-            <span class="stat-label">Projects</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-            <span class="stat-number">MSc</span>
-            <span class="stat-label">Cranfield University</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-            <span class="stat-number">Fuel Systems</span>
-            <span class="stat-label">Aircraft System Design/span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-            <span class="stat-number">Structural Analysis</span>
-            <span class="stat-label">Wing Load and Stress Modelling</span>
-        </div>
+    <div class="hero-image-wrap">
+        <img src="linkedin photo01.png" alt="Animesh Donikar" class="hero-photo">
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
     </div>
 </section>
 
-<!-- BACKGROUND & EXPERIENCE -->
-<section id="experience" class="section">
+<!-- STATS STRIP -->
+<div class="stats-strip">
+    <div class="stats-inner">
+        <div class="stat-item">
+            <span class="stat-n">2</span>
+            <span class="stat-l">Airbus Projects</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+            <span class="stat-n">MSc</span>
+            <span class="stat-l">Cranfield University</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+            <span class="stat-n">CS-25</span>
+            <span class="stat-l">EASA Certified Design</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+            <span class="stat-n">~3.4×</span>
+            <span class="stat-l">Factor of Safety, A320 Wing</span>
+        </div>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <div class="section-label-wrap">
+        <span class="section-label">Projects</span>
+    </div>
+
+    <!-- PROJECT 1 — FULL BLEED -->
+    <div class="project-feature">
+        <a href="fuel-system.html" class="project-feature-inner">
+            <div class="project-feature-image" style="background-image: url('images/fuelpage.png');"></div>
+            <div class="project-feature-overlay"></div>
+            <div class="project-feature-content">
+                <span class="project-badge airbus">Airbus · Systems</span>
+                <h2>Fuel System<br>Architecture</h2>
+                <p>Designed aircraft fuel system including venting, inerting, and water management aligned with CS-25. Delivered at CDR to Airbus stakeholders.</p>
+                <span class="project-link">View Project →</span>
+            </div>
+        </a>
+    </div>
+
+    <!-- PROJECT 2 + 3 — SPLIT -->
+    <div class="project-split">
+
+        <a href="e-taxi.html" class="project-half">
+            <div class="project-half-image" style="background-image: url('images/etaxipage.png');"></div>
+            <div class="project-half-overlay"></div>
+            <div class="project-half-content">
+                <span class="project-badge airbus">Airbus · Integration</span>
+                <h3>Electric Taxiing<br>System</h3>
+                <p>Integrated electric propulsion into landing gear — motor sizing, gearbox design, and safety analysis.</p>
+                <span class="project-link">View Project →</span>
+            </div>
+        </a>
+
+        <a href="personalproject-A320.html" class="project-half">
+            <div class="project-half-image" style="background-image: url('images/wingpage.png');"></div>
+            <div class="project-half-overlay"></div>
+            <div class="project-half-content">
+                <span class="project-badge personal">Independent · Structures</span>
+                <h3>A320 Wing Structural<br>Analysis</h3>
+                <p>Bending moment and stress distribution using Euler–Bernoulli beam theory. Factor of safety ~3.4.</p>
+                <span class="project-link">View Project →</span>
+            </div>
+        </a>
+
+    </div>
+
+    <!-- ADDITIONAL -->
+    <div class="additional-row">
+
+        <div class="additional-card">
+            <div class="additional-image" style="background-image: url('images/rocket.jpg');"></div>
+            <div class="additional-text">
+                <span class="project-badge muted">Om Space · Internship</span>
+                <h4>Propulsion Internship</h4>
+                <p>Rocket propulsion testing — data acquisition, combustion analysis, safety validation.</p>
+            </div>
+        </div>
+
+        <div class="additional-card">
+            <div class="additional-image" style="background-image: url('images/solar.jpg');"></div>
+            <div class="additional-text">
+                <span class="project-badge muted">SRM University · Academic</span>
+                <h4>Solar Thermal Propulsion</h4>
+                <p>Designed propulsion system using heat transfer modelling and CFD in ANSYS Fluent.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section section-tinted">
     <div class="container">
         <div class="section-header">
             <span class="section-label">Background</span>
-            <h2>Experience & Education</h2>
+            <h2 class="section-title">Experience &<br><em>Education</em></h2>
         </div>
 
         <div class="timeline">
 
-    <div class="timeline-line"></div>
-
-    <div class="timeline-item">
-        <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-        </div>
-        <div class="timeline-content">
-            <span class="timeline-date">Mar 2026 – Present</span>
-            <h3>Cliftonvalley Apartments, Bristol</h3>
-            <p class="timeline-role">Operations Assistant</p>
-            <div class="timeline-tags">
-                <span>Excel Planning</span>
-                <span>Operations</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-        </div>
-        <div class="timeline-content">
-            <span class="timeline-date">Jan – Mar 2026</span>
-            <h3>Independent Project</h3>
-            <p class="timeline-role">A320 Wing Structural Analysis</p>
-            <div class="timeline-tags">
-                <span>MATLAB</span>
-                <span>Structural Modelling</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-        </div>
-        <div class="timeline-content">
-            <span class="timeline-date">Nov 2024 – Dec 2025</span>
-            <h3>Boots UK, Bristol</h3>
-            <p class="timeline-role">Customer Advisor</p>
-        </div>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-        </div>
-        <div class="timeline-content">
-            <span class="timeline-date">2023 – 2024</span>
-            <h3>Cranfield University, UK</h3>
-            <p class="timeline-role">MSc Aerospace Vehicle Design</p>
-            <div class="timeline-tags">
-                <span class="airbus">Fuel System Design · Airbus</span>
-                <span class="airbus">Electric Taxiing · Airbus</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-        </div>
-        <div class="timeline-content">
-            <span class="timeline-date">Jun – Aug 2021</span>
-            <h3>Om Space, India</h3>
-            <p class="timeline-role">Propulsion System Design Intern</p>
-            <div class="timeline-tags">
-                <span>Rocket Testing</span>
-                <span>Data Acquisition</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="timeline-item">
-        <div class="timeline-marker">
-            <div class="timeline-dot"></div>
-        </div>
-        <div class="timeline-content">
-            <span class="timeline-date">2018 – 2022</span>
-            <h3>SRM University, India</h3>
-            <p class="timeline-role">BTech Aerospace Engineering</p>
-            <div class="timeline-tags">
-                <span>Solar Thermal Propulsion</span>
-                <span>Rocket Engine Testing</span>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<!-- PROJECTS -->
-<section id="projects" class="section section-alt">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-label">Portfolio</span>
-            <h2>Engineering Projects</h2>
-            <p class="section-subtext">Real-world aerospace engineering work focused on systems, structures, and performance.</p>
-        </div>
-
-        <div class="projects-grid">
-
-            <a href="fuel-system.html" class="project-card" style="background-image: url('images/fuelpage.png');">
-                <div class="card-overlay"></div>
-                <div class="card-body">
-                    <div class="card-top">
-                        <span class="card-badge airbus-badge">Airbus</span>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>Fuel System Architecture</h3>
-                        <p>Designed aircraft fuel system including venting, inerting, and water management aligned with CS-25.</p>
-                        <div class="card-footer">
-                            <span class="card-tag">Systems</span>
-                            <span class="card-cta">View Project →</span>
-                        </div>
-                    </div>
+            <div class="tl-item">
+                <div class="tl-date">Mar 2026 – Present</div>
+                <div class="tl-body">
+                    <h3>Cliftonvalley Apartments</h3>
+                    <p class="tl-role">Operations Assistant · Bristol, UK</p>
+                    <div class="tl-tags"><span>Excel Planning</span><span>Operations</span></div>
                 </div>
-            </a>
+            </div>
 
-            <a href="e-taxi.html" class="project-card" style="background-image: url('images/etaxipage.png');">
-                <div class="card-overlay"></div>
-                <div class="card-body">
-                    <div class="card-top">
-                        <span class="card-badge airbus-badge">Airbus</span>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>Electric Taxiing System</h3>
-                        <p>Integrated electric propulsion into landing gear including motor sizing and gearbox design.</p>
-                        <div class="card-footer">
-                            <span class="card-tag">Integration</span>
-                            <span class="card-cta">View Project →</span>
-                        </div>
-                    </div>
+            <div class="tl-item">
+                <div class="tl-date">Jan – Mar 2026</div>
+                <div class="tl-body">
+                    <h3>Independent Project</h3>
+                    <p class="tl-role">A320 Wing Structural Analysis</p>
+                    <div class="tl-tags"><span>MATLAB</span><span>Structural Modelling</span></div>
                 </div>
-            </a>
+            </div>
 
-            <a href="personalproject-A320.html" class="project-card" style="background-image: url('images/wingpage.png');">
-                <div class="card-overlay"></div>
-                <div class="card-body">
-                    <div class="card-top">
-                        <span class="card-badge personal-badge">Independent</span>
-                    </div>
-                    <div class="card-bottom">
-                        <h3>A320 Wing Structural Analysis</h3>
-                        <p>Analysed bending moment and stress distribution using computational modelling in MATLAB.</p>
-                        <div class="card-footer">
-                            <span class="card-tag">Structures</span>
-                            <span class="card-cta">View Project →</span>
-                        </div>
-                    </div>
+            <div class="tl-item">
+                <div class="tl-date">Nov 2024 – Dec 2025</div>
+                <div class="tl-body">
+                    <h3>Boots UK</h3>
+                    <p class="tl-role">Customer Advisor · Bristol, UK</p>
                 </div>
-            </a>
+            </div>
 
-        </div>
-
-        <!-- Additional experience -->
-        <div class="section-header" style="margin-top: 80px;">
-            <span class="section-label">Also</span>
-            <h2>Additional Experience</h2>
-        </div>
-
-        <div class="additional-grid">
-
-            <div class="additional-card" style="background-image: url('images/rocket.jpg');">
-                <div class="card-overlay"></div>
-                <div class="card-body">
-                    <div class="card-bottom">
-                        <h3>Propulsion Internship</h3>
-                        <p>Rocket propulsion system testing including data acquisition, combustion analysis, and safety validation.</p>
-                        <span class="card-tag">Om Space · Industry</span>
+            <div class="tl-item">
+                <div class="tl-date">2023 – 2024</div>
+                <div class="tl-body">
+                    <h3>Cranfield University, UK</h3>
+                    <p class="tl-role">MSc Aerospace Vehicle Design</p>
+                    <div class="tl-tags airbus-tags">
+                        <span>Fuel System Design · Airbus</span>
+                        <span>Electric Taxiing · Airbus</span>
                     </div>
                 </div>
             </div>
 
-            <div class="additional-card" style="background-image: url('images/solar.jpg');">
-                <div class="card-overlay"></div>
-                <div class="card-body">
-                    <div class="card-bottom">
-                        <h3>Solar Thermal Propulsion</h3>
-                        <p>Designed and analysed propulsion system using heat transfer modelling and CFD in ANSYS Fluent.</p>
-                        <span class="card-tag">SRM University · Academic</span>
-                    </div>
+            <div class="tl-item">
+                <div class="tl-date">Jun – Aug 2021</div>
+                <div class="tl-body">
+                    <h3>Om Space, India</h3>
+                    <p class="tl-role">Propulsion System Design Intern</p>
+                    <div class="tl-tags"><span>Rocket Testing</span><span>Data Acquisition</span></div>
+                </div>
+            </div>
+
+            <div class="tl-item">
+                <div class="tl-date">2018 – 2022</div>
+                <div class="tl-body">
+                    <h3>SRM University, India</h3>
+                    <p class="tl-role">BTech Aerospace Engineering</p>
+                    <div class="tl-tags"><span>Solar Thermal Propulsion</span><span>Rocket Engine Testing</span></div>
                 </div>
             </div>
 
@@ -280,56 +218,47 @@
 </section>
 
 <!-- EXPERTISE -->
-<section id="about" class="section">
+<section id="expertise" class="section">
     <div class="container">
         <div class="section-header">
             <span class="section-label">Skills</span>
-            <h2>Engineering Expertise</h2>
-            <p class="section-subtext">Structured, analysis-driven solutions across aircraft structures, systems integration, and computational modelling.</p>
+            <h2 class="section-title">Engineering<br><em>Expertise</em></h2>
         </div>
 
         <div class="expertise-grid">
 
-            <div class="expertise-card">
-                <div class="expertise-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 20h20M4 20V10l8-8 8 8v10"/><path d="M9 20v-5h6v5"/></svg>
-                </div>
+            <div class="exp-card">
+                <div class="exp-number">01</div>
                 <h3>Structural Analysis</h3>
-                <p>Load modelling, stress evaluation, FEA, and structural efficiency optimisation using MATLAB and ANSYS.</p>
-                <div class="expertise-tools">
-                    <span>MATLAB</span><span>ANSYS</span><span>FEA</span>
+                <p>Load modelling, stress evaluation, FEA, and structural efficiency optimisation.</p>
+                <div class="exp-tools">
+                    <span>MATLAB</span><span>ANSYS</span><span>FEA</span><span>Euler–Bernoulli</span>
                 </div>
             </div>
 
-            <div class="expertise-card">
-                <div class="expertise-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
-                </div>
+            <div class="exp-card">
+                <div class="exp-number">02</div>
                 <h3>Systems Engineering</h3>
-                <p>Aircraft systems architecture, integration, and certification-driven design meeting EASA CS-25.</p>
-                <div class="expertise-tools">
+                <p>Aircraft systems architecture, integration, and certification-driven design to EASA CS-25.</p>
+                <div class="exp-tools">
                     <span>CS-25</span><span>FHA/FTA</span><span>FMEA</span>
                 </div>
             </div>
 
-            <div class="expertise-card">
-                <div class="expertise-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-                </div>
+            <div class="exp-card">
+                <div class="exp-number">03</div>
                 <h3>Computational Modelling</h3>
-                <p>MATLAB-based numerical methods, CFD simulation, and automated analysis workflows.</p>
-                <div class="expertise-tools">
+                <p>MATLAB numerical methods, CFD simulation, and automated analysis workflows.</p>
+                <div class="exp-tools">
                     <span>MATLAB</span><span>ANSYS Fluent</span><span>GNU Octave</span>
                 </div>
             </div>
 
-            <div class="expertise-card">
-                <div class="expertise-icon">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-                </div>
+            <div class="exp-card">
+                <div class="exp-number">04</div>
                 <h3>CAD & Design</h3>
                 <p>3D modelling and assembly design for aerospace components and system integration.</p>
-                <div class="expertise-tools">
+                <div class="exp-tools">
                     <span>CATIA V5</span><span>SolidWorks</span>
                 </div>
             </div>
@@ -339,72 +268,83 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section section-alt">
-    <div class="container">
-        <div class="section-header center">
-            <span class="section-label">Get in touch</span>
-            <h2>Contact</h2>
-            <p class="section-subtext">Open to opportunities in aerospace engineering, structures, and systems design.</p>
+<section id="contact" class="section contact-section">
+    <div class="container contact-inner">
+        <div class="contact-left">
+            <span class="section-label">Contact</span>
+            <h2 class="section-title">Open to<br><em>opportunities.</em></h2>
+            <p class="contact-body">Looking for roles in aerospace engineering, structural analysis, and systems design. Based in Bristol, UK — open to relocation.</p>
+            <a href="Animesh_Donikar_CV.pdf" download class="btn-dark">
+                Download CV
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
         </div>
-
-        <div class="contact-grid">
-
-            <a href="mailto:animesh.donikar@gmail.com" class="contact-card">
+        <div class="contact-right">
+            <a href="mailto:animesh.donikar@gmail.com" class="contact-row">
                 <div class="contact-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 </div>
-                <div>
-                    <p class="contact-label">Email</p>
-                    <p class="contact-value">animesh.donikar@gmail.com</p>
+                <div class="contact-details">
+                    <span class="contact-type">Email</span>
+                    <span class="contact-val">animesh.donikar@gmail.com</span>
                 </div>
-                <span class="contact-arrow">→</span>
+                <span class="contact-arrow">↗</span>
             </a>
-
-            <a href="https://linkedin.com/in/animeshdonikar/" target="_blank" rel="noopener" class="contact-card">
+            <a href="https://linkedin.com/in/animeshdonikar/" target="_blank" rel="noopener" class="contact-row">
                 <div class="contact-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                 </div>
-                <div>
-                    <p class="contact-label">LinkedIn</p>
-                    <p class="contact-value">linkedin.com/in/animeshdonikar</p>
+                <div class="contact-details">
+                    <span class="contact-type">LinkedIn</span>
+                    <span class="contact-val">linkedin.com/in/animeshdonikar</span>
                 </div>
-                <span class="contact-arrow">→</span>
+                <span class="contact-arrow">↗</span>
             </a>
-
-            <a href="tel:+447514441740" class="contact-card">
+            <a href="tel:+447514441740" class="contact-row">
                 <div class="contact-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
-                <div>
-                    <p class="contact-label">Phone</p>
-                    <p class="contact-value">+44 (0) 7514 441 740</p>
+                <div class="contact-details">
+                    <span class="contact-type">Phone</span>
+                    <span class="contact-val">+44 (0) 7514 441 740</span>
                 </div>
-                <span class="contact-arrow">→</span>
+                <span class="contact-arrow">↗</span>
             </a>
-
-            <a href="Animesh_Donikar_CV.pdf" download class="contact-card">
-                <div class="contact-icon">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
-                </div>
-                <div>
-                    <p class="contact-label">Resume</p>
-                    <p class="contact-value">Download CV (PDF)</p>
-                </div>
-                <span class="contact-arrow">↓</span>
-            </a>
-
         </div>
     </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-    <div class="container footer-content">
-        <p class="footer-logo">AD</p>
-        <p class="footer-text">© 2026 Animesh Donikar · Bristol, UK</p>
-        <p class="footer-built">Built with HTML & CSS</p>
+<footer class="footer">
+    <div class="footer-inner">
+        <span class="footer-name">Animesh Donikar</span>
+        <span class="footer-copy">© 2026 · Bristol, UK</span>
+        <a href="Animesh_Donikar_CV.pdf" download class="footer-cv">Download CV</a>
     </div>
 </footer>
+
+<script>
+    // Navbar shrink on scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+            if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                observer.unobserve(e.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.tl-item, .exp-card, .additional-card, .stat-item').forEach(el => {
+        el.classList.add('fade-up');
+        observer.observe(el);
+    });
+</script>
 
 </body>
 </html>
